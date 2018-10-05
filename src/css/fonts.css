@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'ALLERDISPLAY';
+  src: local('ALLERDISPLAY'), url(./fonts/ALLERDISPLAY.TTF) format('woff');
+}
+
+@font-face {
+  font-family: 'LEVIREBRUSHED';
+  src: local('LEVIREBRUSHED'), url(./fonts/LEVIREBRUSHED.TTF) format('woff');
+}
+
+@font-face {
+  font-family: 'Aller_Std_Rg';
+  src: local('Aller_Std_Rg'), url(./fonts/Aller_Std_Rg.ttf) format('woff');
+}
+
+@font-face {
+  font-family: 'AllerDisplay_Std_Rg';
+  src: local('AllerDisplay_Std_Rg'), url(./fonts/AllerDisplay_Std_Rg.ttf) format('woff');
+}
+
+.AllerRegular{
+  font-family: 'Aller_Std_Rg';
+}

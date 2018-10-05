@@ -1,0 +1,33 @@
+{
+  "name": "lamajo",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "hover.css": "^2.3.2",
+    "jquery": "^3.3.1",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
+    "react-preload": "^0.6.0",
+    "react-redux": "^5.0.7",
+    "react-scripts-ts": "2.17.0",
+    "react-spring": "^5.7.2",
+    "reactstrap": "^6.4.0",
+    "redux": "^4.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.2",
+    "@types/jquery": "^3.3.10",
+    "@types/node": "^10.9.4",
+    "@types/react": "^16.4.14",
+    "@types/react-dom": "^16.0.7",
+    "@types/react-redux": "^6.0.9",
+    "typescript": "^3.0.3"
+  }
+}

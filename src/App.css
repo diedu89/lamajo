@@ -1,0 +1,150 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.cover{
+  background-color: white;
+  background-image: url(./css/images/spot.png);
+  background-position: 58.33%;
+  background-size: 84.34%;
+  background-repeat: no-repeat;
+}
+
+.big-text{
+  font-family: 'LEVIREBRUSHED';
+  font-size: 151pt;
+  color: #4acec4;
+  line-height: 130pt;
+}
+
+.concept-text{
+  font-family: 'Aller_Std_Bd';
+  font-size: 20pt;
+  color: #4acec4;
+  line-height: 20pt;
+}
+
+#root {
+  resize: both;
+  position: relative;
+  background: #666;
+}
+
+#app {
+  width: 1024px;
+  height: 768px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center center;
+  overflow: hidden;
+  text-align: center;
+  background: white;
+}
+
+.menu .col{
+  height:200px;
+}
+
+.posterContainer{
+  padding: 0 5% !important;
+  overflow: hidden;
+  height: 100%;
+}
+
+.menu .flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+ 
+  line-height:20px;
+}
+.menu .flex-item {
+  margin: 3% 5%;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+  flex: 1 0 auto;
+  height:auto;
+  border-radius: 10%;
+  box-shadow: 0em 0.3em 1.4em -0.3em #000;
+}
+
+.menu .flex-item:before {
+  content:'';
+  float:left;
+  padding-top:70%;
+}
+
+.text-right{
+  text-align: right;
+}
+
+.box {
+  display: block;
+  float:left;
+  cursor: pointer;
+  position: relative;
+  width: 7.5%;
+  height: 100%;
+  background-color: #B2DBBF;
+  will-change: transform;
+}
+
+.pablo{
+  background-color: #c75464;
+}
+
+.book-bg img{
+  width: 125%;
+  margin-top: 5%;
+  margin-left: -70%;
+}
+
+.book-bg-2 img{
+  width: 100%;
+  margin-top: 25%;
+}
+
+.trazo12-container{
+  padding-top: 25%;
+}
+
+.trazo12-container > div{
+}
