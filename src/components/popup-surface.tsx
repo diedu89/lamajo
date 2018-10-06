@@ -1,31 +1,26 @@
 import * as React from 'react';
 import { animated, config, Spring} from 'react-spring';
 
-class PopUpSurface {
-  public render() {
-    return (
-      <div className="full" style={{backgroundColor:'#BBD54F'}}>
+const PopUpSurface = (props:{image:any, style?:any, delay:number}) => 
+      <div style={{width:'100%', ...props.style}} className="popup">
         <Spring 
-          from={{boxShadow: '-20px 10px 5px rgba(0, 0, 0, 1)', marginTop:0}} 
-          to={{boxShadow: '-130px 45px 15px rgba(0, 0, 0, .3)', marginTop:-30}} 
+          native={true}
+          from={{boxShadow: '-20px 10px 5px rgba(0, 0, 0, 1)', opacity:0, marginTop:0}} 
+          to={{boxShadow: '-30px 28px 15px; rgba(0, 0, 0, .3)', opacity:1, marginTop:-30}} 
           config={config.slow} 
-          delay={200}>
+          delay={props.delay}>
         {styles => 
           <animated.div className="laydown" style={{
             alignSelf:'center',
             backgroundColor: 'white', 
             borderRadius: '5%',
-            height:500,
-            width: 500,
+            width:'100%',
             ...styles
           }}>
-            {' '}
+            <img style={{width:'100%'}} src={props.image} />
           </animated.div>
         }
         </Spring>
       </div>
-    );
-  }
-}
 
 export default PopUpSurface;

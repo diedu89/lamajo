@@ -2,10 +2,12 @@ import * as React from 'react';
 import Page, { PageProps } from './page';
 
 import { animated } from 'react-spring';
+
+import DownArrow from '../components/down-arrow';
 import MenuItem from '../components/menu-item';
+import UpArrow from '../components/up-arrow';
 
 import astronejo from '../css/images/menu/astronejo.png';
-import bruja from '../css/images/menu/bruja.png';
 import cucu from '../css/images/menu/cucu.png';
 import dustchys from '../css/images/menu/dustchys.png';
 import kotta from '../css/images/menu/kotta.png';
@@ -13,6 +15,7 @@ import menche from '../css/images/menu/menche.png';
 import onu1 from '../css/images/menu/onu1.png';
 import onu2 from '../css/images/menu/onu2.png';
 import TBP from '../css/images/menu/TBP.png';
+import witch from '../css/images/menu/witch.png';
 
 interface MenuProps extends PageProps{
   style: any
@@ -24,6 +27,11 @@ class Menu extends Page<MenuProps> {
       <animated.div 
         className="full blue absolute menu" style={this.props.style}>
         <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-1">
+              <DownArrow />
+            </div>
+          </div>
           <div className="flex-container">
             <MenuItem page="onu1" image={onu1}/>
             <MenuItem page="onu2" image={onu2}/>
@@ -35,9 +43,14 @@ class Menu extends Page<MenuProps> {
             <MenuItem page="onu2" image={astronejo}/>
           </div>
           <div className="flex-container">
-            <MenuItem page="onu2" image={cucu}/>
-            <MenuItem page="onu2" image={bruja}/>
+            <MenuItem page="cucu1" image={cucu}/>
+            <MenuItem page="onu2" image={witch}/>
             <MenuItem page="onu2" image={kotta}/>
+          </div>
+          <div className="row justify-content-center">
+            <div className="col-1">
+              <UpArrow />
+            </div>
           </div>
         </div>
       </animated.div>
