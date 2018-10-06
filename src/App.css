@@ -255,3 +255,26 @@
   background-position: right;
   background-repeat: no-repeat;
 }
+
+.contact{
+  background-color: #bcd64f;
+}
+
+.contact-list-item{
+  color:white;
+}
+
+.contact-list-item:hover{
+  text-decoration: none;
+}
+
+.contact-list-item > div.text{
+  text-align: left;
+  padding: 3% 0 0 0;
+}
+
+.contact-list-item > div.icon{
+  font-size: 2em;
+  vertical-align: middle;
+  text-align: center;
+}

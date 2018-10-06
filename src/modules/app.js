@@ -13,11 +13,21 @@ const transitions = {
     from: {opacity: 0, transform: 'translate3d(0%,0,100px)'},
     enter: {opacity:1, transform: 'translate3d(0%,0,0)' },
     leave: {opacity: 0, transform: 'translate3d(0%,0,100px)'}
+  },
+  'DOWN':{
+    from: {opacity: 0, transform: 'translate3d(0,-100%,0)'},
+    enter: {opacity:1, transform: 'translate3d(0,0%,0)' },
+    leave: {opacity: 0, transform: 'translate3d(0,100%,0)'}
+  },
+  'UP':{
+    from: {opacity: 0, transform: 'translate3d(0,100%,0)'},
+    enter: {opacity:1, transform: 'translate3d(0,0%,0)' },
+    leave: {opacity: 0, transform: 'translate3d(0,-100%,0)'}
   }
 
 }
 
-export default function(state = {...transitions.FADE, page:'cover'}, action){
+export default function(state = {...transitions.FADE, page:'contact'}, action){
   console.log(action);
   const {type, transition, page} = action;
   if(transitions[transition]){

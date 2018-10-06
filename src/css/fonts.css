@@ -18,6 +18,15 @@
   src: local('AllerDisplay_Std_Rg'), url(./fonts/AllerDisplay_Std_Rg.ttf) format('woff');
 }
 
+@font-face {
+  font-family: 'Aller_Std_Bd';
+  src: local('Aller_Std_Bd'), url(./fonts/Aller_Std_Bd.ttf) format('woff');
+}
+
 .AllerRegular{
   font-family: 'Aller_Std_Rg';
+}
+
+.AllerBold{
+  font-family: 'Aller_Std_Bd';
 }

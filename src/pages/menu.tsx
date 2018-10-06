@@ -4,6 +4,7 @@ import Page, { PageProps } from './page';
 import { animated } from 'react-spring';
 
 import DownArrow from '../components/down-arrow';
+import Link from '../components/link';
 import MenuItem from '../components/menu-item';
 import UpArrow from '../components/up-arrow';
 
@@ -49,7 +50,9 @@ class Menu extends Page<MenuProps> {
           </div>
           <div className="row justify-content-center">
             <div className="col-1">
-              <UpArrow />
+              <Link page="contact" transition="UP">
+                <UpArrow />
+              </Link>
             </div>
           </div>
         </div>
