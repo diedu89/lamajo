@@ -17,17 +17,17 @@ const transitions = {
   'DOWN':{
     from: {opacity: 0, transform: 'translate3d(0,-100%,0)'},
     enter: {opacity:1, transform: 'translate3d(0,0%,0)' },
-    leave: {opacity: 0, transform: 'translate3d(0,100%,0)'}
+    leave: {opacity: 1, transform: 'translate3d(0,100%,0)'}
   },
   'UP':{
     from: {opacity: 0, transform: 'translate3d(0,100%,0)'},
     enter: {opacity:1, transform: 'translate3d(0,0%,0)' },
-    leave: {opacity: 0, transform: 'translate3d(0,-100%,0)'}
+    leave: {opacity: 1, transform: 'translate3d(0,-100%,0)'}
   }
 
 }
 
-export default function(state = {...transitions.FADE, page:'contact'}, action){
+export default function(state = {...transitions.FADE, page:'about'}, action){
   console.log(action);
   const {type, transition, page} = action;
   if(transitions[transition]){

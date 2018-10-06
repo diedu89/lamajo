@@ -30,7 +30,9 @@ class Menu extends Page<MenuProps> {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-1">
-              <DownArrow />
+              <Link page="about" transition="DOWN">
+                <DownArrow />
+              </Link>
             </div>
           </div>
           <div className="flex-container">

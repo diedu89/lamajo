@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 
 import { config, Transition } from 'react-spring';
 
+import About from './pages/about';
 import Contact from './pages/contact';
 import Cover from './pages/cover';
 import Cucu1 from './pages/cucu1';
@@ -19,6 +20,7 @@ import Pablo2 from './pages/pablo2';
 import Welcome from './pages/welcome';
 
 const pages = {
+  'about': (style:any) => <About style={style} />,
   'contact': (style:any) => <Contact style={style} />,
   'cover': (style:any) => <Cover style={style} />,
   'cucu1': (style:any) => <Cucu1 style={style} />,
