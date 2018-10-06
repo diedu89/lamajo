@@ -131,16 +131,16 @@
 
 .big-text{
   font-family: 'LEVIREBRUSHED';
-  font-size: 151pt;
+  font-size: 5.5em;
   color: #4acec4;
-  line-height: 130pt;
+  line-height: 1em;
 }
 
 .concept-text{
   font-family: 'Aller_Std_Bd';
-  font-size: 20pt;
+  font-size: 0.76em;
   color: #4acec4;
-  line-height: 20pt;
+  line-height: 1.1em;
 }
 
 #root {
