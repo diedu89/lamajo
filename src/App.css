@@ -148,3 +148,16 @@
 
 .trazo12-container > div{
 }
+
+.dustchys{
+  background-image: url(./css/images/dustchys/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.dustchys2{
+  background-image: url(./css/images/dustchys/store.png);
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+}

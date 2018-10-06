@@ -17,7 +17,7 @@ const transitions = {
 
 }
 
-export default function(state = {...transitions.FADE, page:'pablo2'}, action){
+export default function(state = {...transitions.FADE, page:'dustchys2'}, action){
   console.log(action);
   const {type, transition, page} = action;
   if(transitions[transition]){

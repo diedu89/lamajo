@@ -7,12 +7,12 @@ import { animated } from 'react-spring';
 import RightArrow from '../components/right-arrow';
 
 import btnMenu from '../css/images/btn-menu-white.svg';
-import title from '../css/images/pablo-title.png';
+import title from '../css/images/pablo/title.png';
 
 import ColorBar from '../components/color-bar';
 import Link from '../components/link'
 
-import pablo from '../css/images/pablo.png';
+import book from '../css/images/pablo/book.png';
 
 interface PabloProps extends PageProps{
   style: any
@@ -24,7 +24,7 @@ class Pablo extends Page<PabloProps> {
       <animated.div 
         className="center-content-spaced full tomato absolute pablo" style={this.props.style}>
         <div className="absolute col-12 book-bg">
-          <img src={pablo}/>
+          <img src={book}/>
         </div>
         <div className="absolute col-4" style={{right:0, bottom:'5%', padding:0}}>
           <ColorBar />

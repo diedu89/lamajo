@@ -6,6 +6,8 @@ import { connect } from 'react-redux';
 import { config, Transition } from 'react-spring';
 
 import Cover from './pages/cover';
+import Dustchys1 from './pages/dustchys1';
+import Dustchys2 from './pages/dustchys2';
 import Menu from './pages/menu';
 import Onu from './pages/onu';
 import Onu2 from './pages/onu2';
@@ -15,6 +17,8 @@ import Welcome from './pages/welcome';
 
 const pages = {
   'cover': (style:any) => <Cover style={style} />,
+  'dustchys1': (style:any) => <Dustchys1 style={style} />,
+  'dustchys2': (style:any) => <Dustchys2 style={style} />,
   'menu':  (style:any) => <Menu style={style} />,
   'onu1': (style:any) => <Onu style={style} />,
   'onu2': (style:any) => <Onu2 style={style} />,

@@ -4,17 +4,17 @@ import Page, { PageProps } from './page';
 import { animated } from 'react-spring';
 
 import btnMenu from '../css/images/btn-menu-white.svg';
-import title from '../css/images/pablo-process-title.png';
-import terrain from '../css/images/pablo-terrain.png';
-import trazo1 from '../css/images/pablo-trazo-1.png';
-import trazo2 from '../css/images/pablo-trazo-2.png';
-import trazo3 from '../css/images/pablo-trazo-3.png';
+import title from '../css/images/pablo/process-title.png';
+import terrain from '../css/images/pablo/terrain.png';
+import trazo1 from '../css/images/pablo/trazo-1.png';
+import trazo2 from '../css/images/pablo/trazo-2.png';
+import trazo3 from '../css/images/pablo/trazo-3.png';
 
 import ColorBar from '../components/color-bar';
 import LeftArrow from '../components/left-arrow';
 import Link from '../components/link'
 
-import pablo from '../css/images/pablo.png';
+import pablo from '../css/images/pablo/book.png';
 
 interface PabloProps extends PageProps{
   style: any
