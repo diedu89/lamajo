@@ -18,6 +18,8 @@ import Onu2 from './pages/onu2';
 import Pablo1 from './pages/pablo1';
 import Pablo2 from './pages/pablo2';
 import Welcome from './pages/welcome';
+import Witch1 from './pages/witch1';
+import Witch2 from './pages/witch2';
 
 const pages = {
   'about': (style:any) => <About style={style} />,
@@ -33,6 +35,8 @@ const pages = {
   'pablo1': (style:any) => <Pablo1 style={style} />,
   'pablo2': (style:any) => <Pablo2 style={style} />,
   'welcome': (style:any) => <Welcome style={style} />,
+  'witch1': (style:any) => <Witch1 style={style} />,
+  'witch2': (style:any) => <Witch2 style={style} />,
 }
 
 interface AppProps{

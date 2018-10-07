@@ -59,6 +59,10 @@
   background-color: tomato;
 }
 
+.padding0{
+  padding: 0 !important;
+}
+
 .laydown{
   transform: rotateX(58deg) rotateY(10deg) rotateZ(-48deg);
   /*border-radius: 25%;*/
@@ -277,4 +281,32 @@
   font-size: 2em;
   vertical-align: middle;
   text-align: center;
+}
+
+.witch{
+  background-image: url(./css/images/witch/bg.png);
+  background-size: cover;
+  background-position: 50% 27%;
+  background-repeat: no-repeat;
+}
+
+.witch2{
+  background-color: #f7f7f7;
+}
+
+.witch2 .trazo{
+  border-bottom-left-radius:6% 12%;
+  border-bottom-right-radius: 6% 12%;
+  border-top-left-radius:6% 12%;
+  border-top-right-radius:6% 12%;
+  width: 100%;
+}
+
+.witch2 .trazo3{
+  border-bottom-left-radius:4% 12%;
+  border-bottom-right-radius: 4% 12%;
+  border-top-left-radius:4% 12%;
+  border-top-right-radius:4% 12%;
+  width: 100%;
+  margin: 5% 0;
 }

@@ -37,7 +37,7 @@ class Pablo extends Page<PabloProps> {
         <div className="containe" style={{height:'100%'}}>
           <div className="row" style={{height:'100%'}}>
             <div className="col align-self-center" style={{padding:0}}>
-              <Link page="pablo1" transition="MOVE_RIGHT">
+              <Link page="pablo1" transition="MOVE_LEFT">
                 <LeftArrow />
               </Link>
             </div>
