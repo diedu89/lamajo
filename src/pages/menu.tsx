@@ -48,7 +48,7 @@ class Menu extends Page<MenuProps> {
           <div className="flex-container">
             <MenuItem page="cucu1" image={cucu}/>
             <MenuItem page="witch1" image={witch}/>
-            <MenuItem page="onu2" image={kotta}/>
+            <MenuItem page="kotta1" image={kotta}/>
           </div>
           <div className="row justify-content-center">
             <div className="col-1">

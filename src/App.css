@@ -290,7 +290,7 @@
   background-repeat: no-repeat;
 }
 
-.witch2{
+.witch2, kotta2{
   background-color: #f7f7f7;
 }
 
@@ -309,4 +309,15 @@
   border-top-right-radius:4% 12%;
   width: 100%;
   margin: 5% 0;
+}
+
+.kotta{
+  background-image: url('./css/images/kotta/bg.png');
+  background-size: cover;
+  background-position: 50% 27%;
+  background-repeat: no-repeat;
+}
+
+.kotta2{
+  background-color: #f7f7f7;
 }
