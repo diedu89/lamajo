@@ -19,6 +19,8 @@ import Onu from './pages/onu';
 import Onu2 from './pages/onu2';
 import Pablo1 from './pages/pablo1';
 import Pablo2 from './pages/pablo2';
+import Rabbit1 from './pages/rabbit1';
+import Rabbit2 from './pages/rabbit2';
 import Welcome from './pages/welcome';
 import Witch1 from './pages/witch1';
 import Witch2 from './pages/witch2';
@@ -38,6 +40,8 @@ const pages = {
   'onu2': (style:any) => <Onu2 style={style} />,
   'pablo1': (style:any) => <Pablo1 style={style} />,
   'pablo2': (style:any) => <Pablo2 style={style} />,
+  'rabbit1': (style:any) => <Rabbit1 style={style} />,
+  'rabbit2': (style:any) => <Rabbit2 style={style} />,
   'welcome': (style:any) => <Welcome style={style} />,
   'witch1': (style:any) => <Witch1 style={style} />,
   'witch2': (style:any) => <Witch2 style={style} />,

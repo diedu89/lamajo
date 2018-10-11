@@ -4,11 +4,11 @@ import Page, { PageProps } from './page';
 import { animated } from 'react-spring';
 
 import btnMenu from '../css/images/btn-menu-white.svg';
-import title from '../css/images/pablo/process-title.png';
 import terrain from '../css/images/pablo/terrain.png';
 import trazo1 from '../css/images/pablo/trazo-1.png';
 import trazo2 from '../css/images/pablo/trazo-2.png';
 import trazo3 from '../css/images/pablo/trazo-3.png';
+import title from '../css/images/process-blue.png';
 
 import ColorBar from '../components/color-bar';
 import LeftArrow from '../components/left-arrow';
@@ -25,7 +25,7 @@ class Pablo extends Page<PabloProps> {
     return (
       <animated.div 
         className="center-content-spaced full tomato absolute pablo" style={this.props.style}>
-        <div className="absolute offset-6 col-9 book-bg-2">
+        <div className="absolute offset-6 padding0 col-9 book-bg-2">
           <img src={pablo}/>
         </div>
         <div className="absolute col-4" style={{right:0, bottom:'5%', padding:0}}>
@@ -56,7 +56,7 @@ class Pablo extends Page<PabloProps> {
                 </div>
               </div>
             </div>
-            <div className="col-3" style={{marginBottom:'10%', marginTop:'10%'}}>
+            <div className="col-3 padding0" style={{marginBottom:'10%', marginTop:'7%'}}>
               <div className="row full">
                 <div className="col align-self-start">
                   <div className="row">
@@ -68,8 +68,8 @@ class Pablo extends Page<PabloProps> {
                   </div>
                 </div>
                 <div className="w-100" />
-                <div className="col align-self-end">
-                  <img src={title} style={{width:'100%'}} />
+                <div className="col align-self-end" style={{textAlign:'right'}}>
+                  <img src={title} style={{width:'66%'}} />
                   <div className="AllerRegular text-right" style={{fontSize:'0.74em', color:'white',marginTop:'6%'}}>
                     La pieza tomó forma mediante el párrafo de la 
                     historia del personaje, bocetería, aplicación de color

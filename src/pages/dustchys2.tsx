@@ -4,9 +4,9 @@ import Page, { PageProps } from './page';
 import { animated } from 'react-spring';
 
 import btnMenu from '../css/images/btn-menu-white.svg';
-import title from '../css/images/dustchys/process-title.png';
 import trazo1 from '../css/images/dustchys/trazo-1.png';
 import trazo2 from '../css/images/dustchys/trazo-2.png';
+import title from '../css/images/process-white.png';
 
 import LeftArrow from '../components/left-arrow';
 import Link from '../components/link'

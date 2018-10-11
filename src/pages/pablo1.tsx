@@ -31,7 +31,7 @@ class Pablo extends Page<PabloProps> {
         </div>
         <div className="containe" style={{height:'100%'}}>
           <div className="row" style={{height:'100%'}}>
-            <div className="col-3 offset-8" style={{marginBottom:'10%', marginTop:'10%'}}>
+            <div className="col-3 offset-8 padding0" style={{marginBottom:'10%', marginTop:'10%'}}>
               <div className="row full">
                 <div className="col align-self-start">
                   <div className="row">
@@ -43,7 +43,7 @@ class Pablo extends Page<PabloProps> {
                   </div>
                 </div>
                 <div className="w-100" />
-                <div className="col align-self-end">
+                <div className="col align-self-end padding0">
                   <img src={title} style={{width:'100%'}} />
                   <div className="AllerRegular text-right" style={{fontSize:'0.74em', color:'white',marginTop:'6%'}}>
                     Colaboración en conjunto con <br />

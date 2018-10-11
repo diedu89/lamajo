@@ -4,8 +4,8 @@ import Page, { PageProps } from './page';
 import { animated } from 'react-spring';
 
 import btnMenu from '../css/images/btn-menu-blue.svg';
+import process from '../css/images/process-blue.png';
 import book from '../css/images/witch/book.png';
-import process from '../css/images/witch/process.png';
 import trazo1 from '../css/images/witch/trazo1.png';
 import trazo2 from '../css/images/witch/trazo2.png';
 import trazo3 from '../css/images/witch/trazo3.jpg';

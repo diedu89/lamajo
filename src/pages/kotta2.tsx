@@ -7,7 +7,7 @@ import btnMenu from '../css/images/btn-menu-blue.svg';
 import kotta from '../css/images/kotta/kotta.gif';
 import trazo1 from '../css/images/kotta/trazo1.png';
 import trazo2 from '../css/images/kotta/trazo2.png';
-import process from '../css/images/witch/process.png';
+import process from '../css/images/process-blue.png';
 
 import ColorBar from '../components/color-bar';
 import LeftArrow from '../components/left-arrow';

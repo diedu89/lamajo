@@ -40,9 +40,9 @@ class Witch1 extends Page<WitchProps> {
                 <div className="col align-self-end">
                   <img src={title} style={{width:'100%'}} />
                   <div className="AllerRegular text-right" style={{fontSize:'0.74em', color:'white',marginTop:'6%'}}>
-                    Colaboración en conjunto con <br />
-                    <b>ONU MUJERES El Salvador</b>, para la <br />
-                    campaña “Pinta el mundo de naranja”.
+                    Una de las partes fundamentales al 
+                    momento de crear un personaje, es 
+                    la realización de su entorno.
                   </div>
                 </div>
               </div>

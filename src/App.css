@@ -231,13 +231,15 @@
 
 .book-bg img{
   width: 125%;
-  margin-top: 5%;
-  margin-left: -70%;
+  margin-top: -10%;
+  margin-left: -73%;
 }
 
 .book-bg-2 img{
-  width: 100%;
-  margin-top: 25%;
+  width: 105%;
+  margin-top: 10%;
+  margin-left: 3%;
+  transform: rotate(-9deg)
 }
 
 .trazo12-container{
@@ -294,11 +296,11 @@
   background-color: #f7f7f7;
 }
 
-.witch2 .trazo{
-  border-bottom-left-radius:6% 12%;
+.witch2 .trazo, .rabbit2 .trazo {
+  border-bottom-left-radius: 6% 12%;
   border-bottom-right-radius: 6% 12%;
-  border-top-left-radius:6% 12%;
-  border-top-right-radius:6% 12%;
+  border-top-left-radius: 6% 12%;
+  border-top-right-radius: 6% 12%;
   width: 100%;
 }
 
@@ -311,6 +313,14 @@
   margin: 5% 0;
 }
 
+.onu2 .trazo{
+  border-bottom-left-radius: 6% 10%;
+  border-bottom-right-radius: 6% 10%;
+  border-top-left-radius: 6% 10%;
+  border-top-right-radius: 6% 10%;
+  width: 100%;
+}
+
 .kotta{
   background-image: url('./css/images/kotta/bg.png');
   background-size: cover;
@@ -320,4 +330,11 @@
 
 .kotta2{
   background-color: #f7f7f7;
+}
+
+.rabbit2{
+  background-image: url('./css/images/astronejo/bg.jpg');
+  background-size: cover;
+  background-position: 50% 27%;
+  background-repeat: no-repeat;
 }

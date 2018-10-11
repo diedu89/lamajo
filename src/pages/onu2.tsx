@@ -5,7 +5,9 @@ import { animated } from 'react-spring';
 
 import btnMenu from '../css/images/btn-menu-white.svg';
 import onuFrame from '../css/images/onu-frame.png';
-import title from '../css/images/onu-process-title.png';
+import trazo1 from '../css/images/onu/trazo1.png';
+import trazo2 from '../css/images/onu/trazo2.png';
+import title from '../css/images/process-white.png';
 
 import LeftArrow from '../components/left-arrow';
 import Link from '../components/link'
@@ -18,7 +20,7 @@ class Onu2 extends Page<Onu2Props> {
   public render() {
     return (
       <animated.div 
-        className="center-content-spaced full blue absolute" style={this.props.style}>
+        className="center-content-spaced full blue absolute onu2" style={this.props.style}>
         <div className="containe" style={{height:'100%'}}>
           <div className="row" style={{height:'100%'}}>
             <div className="col align-self-center" style={{padding:0}}>
@@ -27,9 +29,9 @@ class Onu2 extends Page<Onu2Props> {
               </Link>
             </div>
             <div className="col-6" style={{padding:'10% 0 0 3%'}}>
-              <img src={onuFrame} style={{width:"100%"}}/>
+              <img src={onuFrame} style={{width:"100%", boxShadow:'15% 15% 5% -9px'}}/>
             </div>
-            <div className="col-3 offset-1" style={{marginBottom:'10%', marginTop:'10%'}}>
+            <div className="col-3 offset-1 padding0" style={{marginBottom:'5%', marginTop:'5%'}}>
               <div className="row full">
                 <div className="col align-self-start">
                   <div className="row">
@@ -41,11 +43,17 @@ class Onu2 extends Page<Onu2Props> {
                   </div>
                 </div>
                 <div className="w-100" />
-                <div className="col align-self-end" style={{padding:0}}>
-                  <div className="row">
-                    <div className="col-8 offset-4" style={{padding:0}}>
-                      <img src={title} style={{width:'100%'}} />
-                    </div>
+                <div className="col" style={{padding:'1%', marginTop:'10%'}}>
+                  <img src={trazo1} className="trazo" style={{width:'100%'}}/>
+                </div>
+                <div className="w-100" />
+                <div className="col" style={{padding:'1%'}}>
+                  <img src={trazo2} className="trazo" style={{width:'100%'}}/>
+                </div>
+                <div className="w-100" />
+                <div className="col align-self-end padding0" style={{marginTop:'5%'}}>
+                  <div className="col-8 offset-4 padding0" style={{padding:0}}>
+                    <img src={title} style={{width:'100%'}} />
                   </div>
                   <div className="AllerRegular text-right" style={{fontSize:'0.73em', color:'white',marginTop:'6%'}}>
                     La inclusividad fue el tema principal para mi <br /> 

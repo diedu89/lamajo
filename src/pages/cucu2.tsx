@@ -11,7 +11,7 @@ import screen2 from '../css/images/cucu/screen2.jpg'
 import screen3 from '../css/images/cucu/screen3.jpg'
 import screen4 from '../css/images/cucu/screen4.jpg'
 import screen5 from '../css/images/cucu/screen5.jpg'
-import title from '../css/images/cucu/title.png';
+import process from '../css/images/process-white.png'
 
 import LeftArrow from '../components/left-arrow';
 import Link from '../components/link'
@@ -50,7 +50,7 @@ class Cucu extends Page<CucuProps> {
                 <LeftArrow />
               </Link>
             </div>
-            <div className="col-3 offset-7" style={{marginBottom:'10%', marginTop:'10%'}}>
+            <div className="col-3 offset-7 padding0" style={{marginBottom:'10%', marginTop:'10%'}}>
               <div className="row full">
                 <div className="col align-self-start">
                   <div className="row">
@@ -62,12 +62,12 @@ class Cucu extends Page<CucuProps> {
                   </div>
                 </div>
                 <div className="w-100" />
-                <div className="col align-self-end">
-                  <img src={title} style={{width:'100%'}} />
+                <div className="col align-self-end padding0 text-right">
+                  <img src={process} style={{width:'66%'}} />
                   <div className="AllerRegular text-right" style={{fontSize:'0.74em', color:'white',marginTop:'6%'}}>
-                    Colaboración en conjunto con <br />
-                    <b>ONU MUJERES El Salvador</b>, para la <br />
-                    campaña “Pinta el mundo de naranja”.
+                  A través de la utilización de ilustraciones, el 
+                  juego busca que el usuario interactúe y 
+                  aprenda de forma rápida, sencilla y divertida.
                   </div>
                 </div>
               </div>
