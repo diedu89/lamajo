@@ -37,12 +37,13 @@ class Kotta extends Page<KottaProps> {
                   </div>
                 </div>
                 <div className="w-100" />
-                <div className="col align-self-end padding0">
+                <div className="col align-self-end">
                   <img src={title} style={{width:'100%'}} />
                   <div className="AllerRegular text-right" style={{fontSize:'0.74em', color:'white',marginTop:'6%'}}>
-                    Colaboración en conjunto con <br />
-                    <b>ONU MUJERES El Salvador</b>, para la <br />
-                    campaña “Pinta el mundo de naranja”.
+                    La combinación de estilos ilustrativos, 
+                    pintura digital y experimentación de 
+                    perspectiva dieron la pauta para la 
+                    creación de esta ilustración.
                   </div>
                 </div>
               </div>

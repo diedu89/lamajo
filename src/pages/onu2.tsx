@@ -29,7 +29,7 @@ class Onu2 extends Page<Onu2Props> {
               </Link>
             </div>
             <div className="col-6" style={{padding:'10% 0 0 3%'}}>
-              <img src={onuFrame} style={{width:"100%", boxShadow:'15% 15% 5% -9px'}}/>
+              <img src={onuFrame} style={{width:"100%", boxShadow:'1em 1em 2.5em 0.1em'}}/>
             </div>
             <div className="col-3 offset-1 padding0" style={{marginBottom:'5%', marginTop:'5%'}}>
               <div className="row full">

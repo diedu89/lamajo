@@ -3,7 +3,7 @@ import Page, { PageProps } from './page';
 
 import { animated } from 'react-spring';
 
-import frame from '../css/images/astronejo/frame.png';
+import frame from '../css/images/astronejo/frame.jpg';
 import trazo1 from '../css/images/astronejo/trazo1.png';
 import trazo2 from '../css/images/astronejo/trazo2.png';
 import trazo3 from '../css/images/astronejo/trazo3.png';
@@ -27,17 +27,17 @@ class Rabbit2 extends Page<RabbitProps> {
         <div className="absolute col-4" style={{right:0, bottom:'5%', padding:0}}>
           <ColorBar />
         </div>
-        <div className="absolute col-8">
-          <img src={frame} style={{width:'100%'}}/>
-        </div>
         <div className="containe" style={{height:'100%'}}>
           <div className="row" style={{height:'100%'}}>
             <div className="col align-self-center" style={{padding:0}}>
               <Link page="rabbit1" transition="MOVE_LEFT">
                 <LeftArrow/>
               </Link>
-            </div>  
-            <div className="col-4 offset-6 padding0" style={{marginBottom:'5%', marginTop:'5%'}}>
+            </div>
+            <div className="col-6 align-self-center" style={{padding:'0 3%'}}>
+              <img src={frame} style={{width:'100%', boxShadow:'1em 1em 2.5em 0.1em'}}/>
+            </div>
+            <div className="col-4 padding0" style={{marginBottom:'5%', marginTop:'5%'}}>
               <div className="row full">
                 <div className="col align-self-start">
                   <div className="row">

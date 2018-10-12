@@ -286,7 +286,7 @@
 }
 
 .witch{
-  background-image: url(./css/images/witch/bg.png);
+  background-image: url(./css/images/witch/bg.jpg);
   background-size: cover;
   background-position: 50% 27%;
   background-repeat: no-repeat;
@@ -322,7 +322,7 @@
 }
 
 .kotta{
-  background-image: url('./css/images/kotta/bg.png');
+  background-image: url('./css/images/kotta/bg.jpg');
   background-size: cover;
   background-position: 50% 27%;
   background-repeat: no-repeat;
