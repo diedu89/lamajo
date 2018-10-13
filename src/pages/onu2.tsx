@@ -4,7 +4,7 @@ import Page, { PageProps } from './page';
 import { animated } from 'react-spring';
 
 import btnMenu from '../css/images/btn-menu-white.svg';
-import onuFrame from '../css/images/onu-frame.png';
+import frame from '../css/images/onu/frame.jpg';
 import trazo1 from '../css/images/onu/trazo1.png';
 import trazo2 from '../css/images/onu/trazo2.png';
 import title from '../css/images/process-white.png';
@@ -29,7 +29,7 @@ class Onu2 extends Page<Onu2Props> {
               </Link>
             </div>
             <div className="col-6" style={{padding:'10% 0 0 3%'}}>
-              <img src={onuFrame} style={{width:"100%", boxShadow:'1em 1em 2.5em 0.1em'}}/>
+              <img src={frame} style={{width:"100%", boxShadow:'1em 1em 2.5em 0.1em'}}/>
             </div>
             <div className="col-3 offset-1 padding0" style={{marginBottom:'5%', marginTop:'5%'}}>
               <div className="row full">

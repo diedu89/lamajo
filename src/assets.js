@@ -15,7 +15,7 @@ import witch from './css/images/menu/witch.png';
 
 import onu_title from './css/images/onu-title.png';
 import onu_poster from './css/images/poster.png';
-import onu_onuFrame from './css/images/onu-frame.png';
+import onu_frame from './css/images/onu/frame.jpg';
 import onu_trazo1 from './css/images/onu/trazo1.png';
 import onu_trazo2 from './css/images/onu/trazo2.png';
 
@@ -83,7 +83,7 @@ import contact_title from './css/images/contact/title.png'
 export default [
   process_white, process_blue, spot, logo_text,
   astronejo, cucu, dustchys, kotta, menche, onu1, onu2, TBP, witch, 
-  onu_title, onu_poster, onu_onuFrame, onu_trazo1, onu_trazo2, 
+  onu_title, onu_poster, onu_frame, onu_trazo1, onu_trazo2, 
   pablo_book, pablo_terrain, pablo_title, pablo_trazo1, pablo_trazo2, pablo_trazo3, 
   menche_book1, menche_book2, menche_book3, menche_trazo1, menche_trazo2, 
   dustchys_bg, dustchys_product, dustchys_table, dustchys_title, dustchys_trazo1, dustchys_trazo2, 
