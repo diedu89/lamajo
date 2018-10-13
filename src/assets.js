@@ -70,6 +70,16 @@ import kotta_kotta from './css/images/kotta/kotta.gif';
 import kotta_trazo1 from './css/images/kotta/trazo1.png';
 import kotta_trazo2 from './css/images/kotta/trazo2.png';
 
+import about_majo from './css/images/about/majo.png';
+import about_piercing from './css/images/about/piercing.png';
+import about_playlist from './css/images/about/playlist.png';
+import about_rabbits from './css/images/about/rabbits.png';
+import about_sight from './css/images/about/sight.png';
+import about_stories from './css/images/about/stories.png';
+
+import contact_majo from './css/images/contact/majo.png'
+import contact_title from './css/images/contact/title.png'
+
 export default [
   process_white, process_blue, spot, logo_text,
   astronejo, cucu, dustchys, kotta, menche, onu1, onu2, TBP, witch, 
@@ -82,4 +92,6 @@ export default [
   cucu_screen1, cucu_screen2, cucu_screen3, cucu_screen4, cucu_screen5, 
   witch_bg, witch_book, witch_title, witch_trazo1, witch_trazo2, witch_trazo3, 
   kotta_title, kotta_kotta, kotta_trazo1, kotta_trazo2, 
+  about_majo, about_piercing, about_playlist, about_rabbits, about_sight, about_stories, 
+  contact_majo, contact_title,
 ]
