@@ -8,7 +8,7 @@ import RightArrow from '../components/right-arrow';
 
 import btnMenu from '../css/images/btn-menu-white.svg';
 import product from '../css/images/dustchys/product.png';
-import table from '../css/images/dustchys/table.png';
+import table from '../css/images/dustchys/table.jpg';
 import title from '../css/images/dustchys/title.png';
 
 import ColorBar from '../components/color-bar';
@@ -39,7 +39,7 @@ class Dustchys extends Page<DustchysProps> {
                 <div className="col align-self-start">
                   <div className="row">
                     <div className="col-4 offset-8 hvr-pulse-grow" style={{padding: '3%'}}>
-                      <Link page="menu" transition="MOVE_LEFT">
+                      <Link page="menu" transition="FADE">
                         <img src={btnMenu} style={{width:'100%'}}/>
                       </Link>
                     </div>

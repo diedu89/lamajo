@@ -41,7 +41,7 @@ class Menu extends Page<MenuProps> {
             <MenuItem page="pablo1" image={TBP}/>
           </div>
           <div className="flex-container">
-            <MenuItem page="onu2" image={menche}/>
+            <MenuItem page="meche1" image={menche}/>
             <MenuItem page="dustchys1" image={dustchys}/>
             <MenuItem page="rabbit1" image={astronejo}/>
           </div>

@@ -36,7 +36,7 @@ class Rabbit extends Page<RabbitProps> {
                 <div className="col align-self-start">
                   <div className="row">
                     <div className="col-4 offset-8 hvr-pulse-grow" style={{padding: '3%'}}>
-                      <Link page="menu" transition="MOVE_LEFT">
+                      <Link page="menu" transition="FADE">
                         <img src={btnMenu} style={{width:'100%'}}/>
                       </Link>
                     </div>

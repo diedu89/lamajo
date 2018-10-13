@@ -32,7 +32,7 @@ class Dustchys extends Page<DustchysProps> {
                 <div className="col align-self-start">
                   <div className="row">
                     <div className="col-4 offset-8 hvr-pulse-grow" style={{padding: '3%'}}>
-                      <Link page="menu" transition="MOVE_LEFT">
+                      <Link page="menu" transition="FADE">
                         <img src={btnMenu} style={{width:'100%'}}/>
                       </Link>
                     </div>
@@ -40,11 +40,11 @@ class Dustchys extends Page<DustchysProps> {
                 </div>
                 <div className="w-100" />
                 <div className="col" style={{padding:'1px'}}>
-                  <img src={trazo1} style={{width:'100%'}} />
+                  <img src={trazo1} className="trazo" style={{width:'100%'}} />
                 </div>
                 <div className="w-100" />
                 <div className="col" style={{padding:'1px'}}>
-                  <img src={trazo2} style={{width:'100%'}} />
+                  <img src={trazo2} className="trazo" style={{width:'100%'}} />
                 </div>
                 <div className="w-100" />
                 <div className="col align-self-end" style={{padding:0}}>

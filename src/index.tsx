@@ -44,13 +44,11 @@ function doResize(event:any, ui:any) {
     return;
   }
   
-  console.log(elWidth, windowWidth, elHeight, windowHeight);
   const scale = Math.min(
     windowWidth / 1024,    
     windowHeight / 768
   );
 
-  console.log(scale);
   $el.css({
     transform: "translate(-50%, -50%) " + "scale(" + scale + ")"
   });

@@ -250,13 +250,13 @@
 }
 
 .dustchys{
-  background-image: url(./css/images/dustchys/bg.png);
+  background-image: url(./css/images/dustchys/bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .dustchys2{
-  background-image: url(./css/images/dustchys/store.png);
+  background-image: url(./css/images/dustchys/store.jpg);
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
@@ -313,7 +313,7 @@
   margin: 5% 0;
 }
 
-.onu2 .trazo{
+.onu2 .trazo, .meche2 .trazo, .dustchys2 .trazo{
   border-bottom-left-radius: 6% 10%;
   border-bottom-right-radius: 6% 10%;
   border-top-left-radius: 6% 10%;
@@ -337,4 +337,8 @@
   background-size: cover;
   background-position: 50% 27%;
   background-repeat: no-repeat;
+}
+
+.meche2, .meche{
+  background-image: linear-gradient(to bottom right, #ebb881, #df9556);
 }

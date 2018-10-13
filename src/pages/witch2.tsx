@@ -41,7 +41,7 @@ class Witch1 extends Page<WitchProps> {
                 <div className="col align-self-start">
                   <div className="row">
                     <div className="col-3 offset-9 hvr-pulse-grow" style={{padding: '3%'}}>
-                      <Link page="menu" transition="MOVE_LEFT">
+                      <Link page="menu" transition="FADE">
                         <img src={btnMenu} style={{width:'100%'}}/>
                       </Link>
                     </div>
