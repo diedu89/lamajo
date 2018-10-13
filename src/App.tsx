@@ -3,7 +3,10 @@ import './App.css';
 
 import { connect } from 'react-redux';
 
+import Preload from 'react-preload';
 import { config, Transition } from 'react-spring';
+
+import assets from './assets'
 
 import About from './pages/about';
 import Contact from './pages/contact';
@@ -59,21 +62,28 @@ interface AppState{
   scale:number
 }
 
+const loadingIndicator = (<div>Loading...</div>);
+
+
 class App extends React.PureComponent<AppProps, AppState>{
   
   public render() {
     const {from, enter, leave, page} = this.props;
     return (
       <div id="app" className="full">
-        <div className="very-specific-design">
-          <Transition
-            config={config.slow}
-            from={from}
-            enter={enter}
-            leave={leave}>
-            {pages[page]}
-          </Transition>
-        </div>
+        <Preload
+          loadingIndicator={loadingIndicator}
+          images={assets}>
+          <div className="very-specific-design">
+            <Transition
+              config={config.slow}
+              from={from}
+              enter={enter}
+              leave={leave}>
+              {pages[page]}
+            </Transition>
+          </div>
+        </Preload>
       </div>
     )
   }
