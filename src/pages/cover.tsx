@@ -24,7 +24,7 @@ class Cover extends Page<CoverProps> {
                   ...styles
                 }}>
                   <Link page="welcome" transition="FADE">
-                    <img src={logo} alt="" style={{width:'100%'}}/>
+                    <img src={logo} alt="" style={{width:'100%', animationName:'hvr-pulse-grow', animationDuration:'1s', animationIterationCount:'infinite', animationDirection:'alternate'}}/>
                   </Link>
                 </div>
               }

@@ -23,9 +23,7 @@ class Meche extends Page<MecheProps> {
           <div className="absolute full">
             <img src={book} style={{width:'100%'}}/>
           </div>
-          <div className="absolute col-4" style={{right:0, bottom:'5%', padding:0}}>
-            <ColorBar />
-          </div>
+          <ColorBar />
           <div className="row" style={{height:'100%'}}>
             <div className="col-4 offset-7 padding0" style={{marginBottom:'5%', marginTop:'5%'}}>
               <div className="row full">
@@ -40,7 +38,7 @@ class Meche extends Page<MecheProps> {
                 </div>
                 <div className="w-100" />
                 <div className="col align-self-end padding0" style={{marginTop:'5%'}}>
-                  <div className="AllerRegular text-right" style={{fontSize:'0.73em', color:'white',marginTop:'6%'}}>
+                  <div className="AllerRegular text-right" style={{fontSize:'0.76em', color:'white',marginTop:'6%'}}>
                     Con el equipo, decidimos profundizar en el tema de la 
                     desigualdad de género creando un documento informativo 
                     y a “La Menche” para generar consciencia de una mejor 

@@ -16,6 +16,8 @@ import process from '../css/images/process-white.png'
 import LeftArrow from '../components/left-arrow';
 import Link from '../components/link'
 import PopUpSurface from '../components/popup-surface';
+import SocialNetworkLinks from '../components/social-networks-links';
+import Tools from '../components/tools';
 
 interface CucuProps extends PageProps{
   style: any
@@ -50,7 +52,7 @@ class Cucu extends Page<CucuProps> {
                 <LeftArrow />
               </Link>
             </div>
-            <div className="col-3 offset-7 padding0" style={{marginBottom:'10%', marginTop:'10%'}}>
+            <div className="col-3 offset-7 padding0" style={{marginBottom:'5%', marginTop:'10%'}}>
               <div className="row full">
                 <div className="col align-self-start">
                   <div className="row">
@@ -64,11 +66,15 @@ class Cucu extends Page<CucuProps> {
                 <div className="w-100" />
                 <div className="col align-self-end padding0 text-right">
                   <img src={process} style={{width:'66%'}} />
-                  <div className="AllerRegular text-right" style={{fontSize:'0.74em', color:'white',marginTop:'6%'}}>
+                  <div className="AllerRegular text-right" style={{fontSize:'0.75em', color:'white',marginTop:'6%'}}>
                   A través de la utilización de ilustraciones, el 
                   juego busca que el usuario interactúe y 
                   aprenda de forma rápida, sencilla y divertida.
                   </div>
+                  <Tools className="col-8 offset-4 padding0 row" 
+                        style={{marginTop:'2%'}} 
+                        tools={['Paint Tool Sai','Photoshop']}/>
+                  <SocialNetworkLinks className="col-3 offset-9 padding0 row" instagram="Bkys1gjBKi3"/>
                 </div>
               </div>
             </div>

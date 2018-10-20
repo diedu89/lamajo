@@ -24,9 +24,7 @@ class Cucu extends Page<CucuProps> {
     return (
       <animated.div 
         className="center-content-spaced full green absolute" style={this.props.style}>
-        <div className="absolute col-4" style={{right:0, bottom:'5%', padding:0}}>
-          <ColorBar />
-        </div>
+        <ColorBar />
         <div className="absolute row full">
           <div className="col-2" style={{padding:0}}>
             <img src={featherTopLeft} style={{width:'100%'}}/>

@@ -9,6 +9,7 @@ import RightArrow from '../components/right-arrow';
 import title from '../css/images/astronejo/title.png';
 import btnMenu from '../css/images/btn-menu-white.svg';
 
+import poster from '../css/images/astronejo/bg.jpg';
 import rabbitVideo from '../css/videos/rabbit.mp4';
 
 import ColorBar from '../components/color-bar';
@@ -24,11 +25,9 @@ class Rabbit extends Page<RabbitProps> {
       <animated.div 
         className="center-content-spaced full absolute" style={this.props.style}>
         <div className="absolute full" style={{zIndex:0}}>
-          <video src={rabbitVideo} style={{width:'100%', height:'100%'}} muted={true} autoPlay={true}/>
+          <video src={rabbitVideo} poster={poster} style={{width:'100%', height:'100%'}} autoPlay={true}/>
         </div>
-        <div className="absolute col-4" style={{right:0, bottom:'5%', padding:0}}>
-          <ColorBar />
-        </div>
+        <ColorBar />
         <div className="containe" style={{height:'100%'}}>
           <div className="row" style={{height:'100%'}}>
             <div className="col-3 offset-8 padding0" style={{marginBottom:'10%', marginTop:'10%'}}>

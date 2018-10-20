@@ -10,9 +10,10 @@ import trazo2 from '../css/images/pablo/trazo-2.png';
 import trazo3 from '../css/images/pablo/trazo-3.png';
 import title from '../css/images/process-blue.png';
 
-import ColorBar from '../components/color-bar';
 import LeftArrow from '../components/left-arrow';
-import Link from '../components/link'
+import Link from '../components/link';
+import SocialNetworkLinks from '../components/social-networks-links';
+import Tools from '../components/tools';
 
 import pablo from '../css/images/pablo/book.png';
 
@@ -27,9 +28,6 @@ class Pablo extends Page<PabloProps> {
         className="center-content-spaced full tomato absolute pablo" style={this.props.style}>
         <div className="absolute offset-6 padding0 col-9 book-bg-2">
           <img src={pablo}/>
-        </div>
-        <div className="absolute col-4" style={{right:0, bottom:'5%', padding:0}}>
-          <ColorBar />
         </div>
         <div className="absolute col-7" style={{left:0, bottom:0, padding:0}}>
           <img src={terrain} style={{width: '105%'}}/>
@@ -56,7 +54,7 @@ class Pablo extends Page<PabloProps> {
                 </div>
               </div>
             </div>
-            <div className="col-3 padding0" style={{marginBottom:'10%', marginTop:'7%'}}>
+            <div className="col-3 padding0" style={{marginBottom:'5%', marginTop:'7%'}}>
               <div className="row full">
                 <div className="col align-self-start">
                   <div className="row">
@@ -68,13 +66,17 @@ class Pablo extends Page<PabloProps> {
                   </div>
                 </div>
                 <div className="w-100" />
-                <div className="col align-self-end" style={{textAlign:'right'}}>
+                <div className="col align-self-end padding0" style={{textAlign:'right'}}>
                   <img src={title} style={{width:'66%'}} />
                   <div className="AllerRegular text-right" style={{fontSize:'0.74em', color:'white',marginTop:'6%'}}>
                     La pieza tomó forma mediante el párrafo de la 
                     historia del personaje, bocetería, aplicación de color
                     y texturas y diagramación del extracto del cuento.
                   </div>
+                  <Tools className="col padding0 row" 
+                        style={{margin:'2% 0 0 0', textAlign:'right !important'}} 
+                        tools={['Paint Tool Sai','Photoshop','InDesign']}/>
+                  <SocialNetworkLinks className="col-3 offset-9 padding0 row" instagram="Bd6Y6l4HTia" />                        
                 </div>
               </div>
             </div>

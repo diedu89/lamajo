@@ -9,9 +9,10 @@ import trazo1 from '../css/images/kotta/trazo1.png';
 import trazo2 from '../css/images/kotta/trazo2.png';
 import process from '../css/images/process-blue.png';
 
-import ColorBar from '../components/color-bar';
 import LeftArrow from '../components/left-arrow';
-import Link from '../components/link'
+import Link from '../components/link';
+import SocialNetworkLinks from '../components/social-networks-links';
+import Tools from '../components/tools';
 
 interface KottaProps extends PageProps{
   style: any
@@ -22,9 +23,6 @@ class Kotta extends Page<KottaProps> {
     return (
       <animated.div 
         className="center-content-spaced full absolute kotta2" style={this.props.style}>
-        <div className="absolute col-4" style={{right:0, bottom:'5%', padding:0}}>
-          <ColorBar />
-        </div>
         <div className="containe" style={{height:'100%'}}>
           <div className="row" style={{height:'100%'}}>
             <div className="col-1 align-self-center" style={{padding:0}}>
@@ -39,7 +37,7 @@ class Kotta extends Page<KottaProps> {
               <div className="row full">
                 <div className="col align-self-start">
                   <div className="row">
-                    <div className="col-3 offset-9 hvr-pulse-grow" style={{padding: '3%'}}>
+                    <div className="col-4 offset-8 hvr-pulse-grow" style={{padding: '3%'}}>
                       <Link page="menu" transition="FADE">
                         <img src={btnMenu} style={{width:'100%'}}/>
                       </Link>
@@ -58,6 +56,11 @@ class Kotta extends Page<KottaProps> {
                         luces y elementos fueron claves (y retos) para 
                         lograr la unficiación de personaje y fondo.
                       </div>
+                      <Tools className="col padding0 row text-right" 
+                        style={{margin:'3% 0 0 0'}}
+                        color="#4acec4" 
+                        tools={['Paint Tool Sai','Photoshop']}/>
+                      <SocialNetworkLinks style={{color:'#4acec4'}} className="col-6 offset-6 padding0 row" instagram="Bg7ndkMnXUk" behance="64421247/S-u-n-s-e-t"/>
                     </div>
                   </div>
                 </div>

@@ -191,7 +191,7 @@
   line-height:20px;
 }
 .menu .flex-item {
-  margin: 3% 5%;
+  margin: 2.5% 5%;
   background-position: center;
   background-size: cover;
   color: white;
@@ -217,7 +217,6 @@
 .box {
   display: block;
   float:left;
-  cursor: pointer;
   position: relative;
   width: 7.5%;
   height: 100%;
@@ -341,4 +340,18 @@
 
 .meche2, .meche{
   background-image: linear-gradient(to bottom right, #ebb881, #df9556);
+}
+
+.sociallink{
+  font-size: 1.5em;
+  vertical-align: middle;
+  text-align: right;
+}
+
+.sociallink a{
+  color:white;
+}
+
+.sociallink a:hover{
+  color:white;
 }

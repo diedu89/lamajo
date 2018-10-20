@@ -26,9 +26,7 @@ class Dustchys extends Page<DustchysProps> {
         <div className="absolute" style={{right:0, bottom:0, padding:0}}>
           <img src={table} style={{width:'100%'}} />
         </div>
-        <div className="absolute col-4" style={{right:0, bottom:'5%', padding:0}}>
-          <ColorBar />
-        </div>
+        <ColorBar />
         <div className="containe" style={{height:'100%'}}>
           <div className="row" style={{height:'100%'}}>
             <div className="col-7 offset-1 align-self-end" style={{padding:0, marginBottom:'6%'}}>

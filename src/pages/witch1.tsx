@@ -20,9 +20,7 @@ class Witch1 extends Page<WitchProps> {
     return (
       <animated.div 
         className="center-content-spaced full absolute witch" style={this.props.style}>
-        <div className="absolute col-4" style={{right:0, bottom:'5%', padding:0}}>
-          <ColorBar />
-        </div>
+        <ColorBar />
         <div className="containe" style={{height:'100%'}}>
           <div className="row" style={{height:'100%'}}>
             <div className="col-3 offset-8" style={{marginBottom:'10%', marginTop:'10%'}}>

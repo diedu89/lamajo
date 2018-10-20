@@ -12,6 +12,8 @@ import title from '../css/images/process-white.png';
 
 import LeftArrow from '../components/left-arrow';
 import Link from '../components/link'
+import SocialNetworkLinks from '../components/social-networks-links';
+import Tools from '../components/tools';
 
 interface Meche2Props extends PageProps{
   style: any
@@ -45,11 +47,11 @@ class Meche2 extends Page<Meche2Props> {
                   </div>
                 </div>
                 <div className="w-100" />
-                <div className="col" style={{padding:'1%', marginTop:'10%'}}>
+                <div className="col" style={{padding:'4%', marginTop:'10%'}}>
                   <img src={trazo1} className="trazo" style={{width:'100%'}}/>
                 </div>
                 <div className="w-100" />
-                <div className="col" style={{padding:'1%'}}>
+                <div className="col" style={{padding:'4%'}}>
                   <img src={trazo2} className="trazo" style={{width:'100%'}}/>
                 </div>
                 <div className="w-100" />
@@ -62,6 +64,10 @@ class Meche2 extends Page<Meche2Props> {
                     y las estudiantes en las escuelas, acompañada 
                     de ilustraciones que les caracterizaran.
                   </div>
+                  <Tools className="col-8 offset-4 padding0 row" 
+                        style={{marginTop:'2%'}} 
+                        tools={['Paint Tool Sai','InDesign']}/>
+                  <SocialNetworkLinks className="col-3 offset-9 padding0 row"/>
                 </div>
               </div>
             </div>

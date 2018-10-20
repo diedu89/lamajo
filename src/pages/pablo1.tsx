@@ -26,12 +26,12 @@ class Pablo extends Page<PabloProps> {
         <div className="absolute col-12 book-bg">
           <img src={book}/>
         </div>
-        <div className="absolute col-4" style={{right:0, bottom:'5%', padding:0}}>
-          <ColorBar />
-        </div>
+        
+        <ColorBar />
+        
         <div className="containe" style={{height:'100%'}}>
           <div className="row" style={{height:'100%'}}>
-            <div className="col-3 offset-8 padding0" style={{marginBottom:'10%', marginTop:'10%'}}>
+            <div className="col-3 offset-8 padding0" style={{marginBottom:'7%', marginTop:'10%'}}>
               <div className="row full">
                 <div className="col align-self-start">
                   <div className="row">
@@ -44,11 +44,15 @@ class Pablo extends Page<PabloProps> {
                 </div>
                 <div className="w-100" />
                 <div className="col align-self-end padding0">
-                  <img src={title} style={{width:'100%'}} />
+                  <div style={{padding:'5%'}}>
+                    <img src={title} style={{width:'100%'}} />
+                  </div>
                   <div className="AllerRegular text-right" style={{fontSize:'0.74em', color:'white',marginTop:'6%'}}>
-                    Colaboración en conjunto con <br />
-                    <b>Pablo MUJERES El Salvador</b>, para la <br />
-                    campaña “Pinta el mundo de naranja”.
+                    Propuesta de ilustración editorial, constó de la 
+                    interpretación de un cuento infantil y la creación 
+                    del personaje principal junto con su entorno
+                    <br/><br/>
+                    cliente: <b>THE BOOK PROJECT</b> 
                   </div>
                 </div>
               </div>

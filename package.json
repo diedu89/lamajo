@@ -13,10 +13,10 @@
     "jquery": "^3.3.1",
     "react": "^16.5.0",
     "react-dom": "^16.5.0",
-    "react-preload": "^0.6.0",
+    "react-preload": "file:../react-preload",
     "react-redux": "^5.0.7",
     "react-scripts-ts": "2.17.0",
-    "react-spring": "^5.7.2",
+    "react-spring": "^5.9.2",
     "reactstrap": "^6.4.0",
     "redux": "^4.0.0"
   },

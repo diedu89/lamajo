@@ -8,9 +8,10 @@ import Link from '../components/link';
 
 import majo from '../css/images/contact/majo.png'
 import title from '../css/images/contact/title.png'
+import cv from '../lamajo_cv.pdf';
 
 import { faBehance, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faFileInvoice } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
@@ -39,6 +40,11 @@ const items = [
     href: 'https://linkedin.com/in/mjmanzano',
     icon: (<FontAwesomeIcon icon={faLinkedin} />),
     text: 'linkedin.com/in/mjmanzano',
+  },
+  {
+    href: cv,
+    icon: (<FontAwesomeIcon icon={faFileInvoice} />),
+    text: 'Resumen creativo',
   }
 ]
 
@@ -46,7 +52,7 @@ class Contact extends Page<ContactProps> {
   public render() {
     return (
       <animated.div className="center-content center-vertical full absolute contact" style={this.props.style}>
-        <div className="container full">
+        <div className="full">
           <div className="row justify-content-center">
             <div className="col-1">
               <Link page="menu" transition="DOWN">

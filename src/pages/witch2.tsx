@@ -10,9 +10,10 @@ import trazo1 from '../css/images/witch/trazo1.png';
 import trazo2 from '../css/images/witch/trazo2.png';
 import trazo3 from '../css/images/witch/trazo3.jpg';
 
-import ColorBar from '../components/color-bar';
 import LeftArrow from '../components/left-arrow';
 import Link from '../components/link'
+import SocialNetworkLinks from '../components/social-networks-links';
+import Tools from '../components/tools';
 
 interface WitchProps extends PageProps{
   style: any
@@ -23,9 +24,6 @@ class Witch1 extends Page<WitchProps> {
     return (
       <animated.div 
         className="center-content-spaced full absolute witch2" style={this.props.style}>
-        <div className="absolute col-4" style={{right:0, bottom:'5%', padding:0}}>
-          <ColorBar />
-        </div>
         <div className="absolute col-7 padding0">
           <img src={book} style={{width:'100%'}}/>
         </div>
@@ -36,7 +34,7 @@ class Witch1 extends Page<WitchProps> {
                 <LeftArrow/>
               </Link>
             </div>  
-            <div className="col-4 offset-6" style={{marginBottom:'5%', marginTop:'5%'}}>
+            <div className="col-4 offset-6" style={{marginBottom:'0%', marginTop:'5%'}}>
               <div className="row full">
                 <div className="col align-self-start">
                   <div className="row">
@@ -66,6 +64,11 @@ class Witch1 extends Page<WitchProps> {
                         luces y elementos fueron claves (y retos) para 
                         lograr la unficiación de personaje y fondo.
                       </div>
+                      <Tools className="col-8 offset-4 padding0 row" 
+                        style={{marginTop:'2%'}}
+                        color="#4acec4" 
+                        tools={['Paint Tool Sai','Photoshop']}/>
+                      <SocialNetworkLinks style={{color:'#4acec4'}} className="col-3 offset-9 padding0 row" instagram="BkbhzQMhjLK"/>
                     </div>
                   </div>
                 </div>

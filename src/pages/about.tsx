@@ -23,19 +23,26 @@ class About extends Page<AboutProps> {
   public render() {
     return (
       <animated.div className="full absolute contact" style={this.props.style}>
+
         <div className="absolute full row" >
-          <div className="col-1 offset-6 align-self-end padding0" style={{marginBottom:'14%',height:'40%', display:'flex',flexDirection:'column', justifyContent:'space-between'}}>
+          <div className="col-1 offset-6 align-self-end" style={{marginBottom:'10%',height:'40%', display:'flex',flexDirection:'column', justifyContent:'space-between'}}>
             <img src={sight} style={{width:'100%'}}/>
             <img src={rabbits} style={{width:'100%'}}/>
           </div>
-          <div className="col-1 offset-2 padding0" style={{marginTop:'11%'}}>
+          <div className="col-1 offset-2" style={{marginTop:'11%'}}>
             <img src={stories} style={{width:'100%'}}/>
           </div>
-          <div className="col-1 align-self-end padding0" style={{marginBottom:'16%',height:'45%', display:'flex',flexDirection:'column', justifyContent:'space-between'}}>
+          <div className="col-1 align-self-end" style={{marginBottom:'16%',height:'45%', display:'flex',flexDirection:'column', justifyContent:'space-between'}}>
             <img src={piercing} style={{width:'100%'}}/>
             <img src={playlist} style={{width:'100%'}}/>
           </div>
         </div>
+
+          <div className="col-1 align-self-end absolute" style={{bottom:0, left:'50%', marginBottom:'1%', paddingLeft:'-50%'}}>
+            <Link page="menu" transition="UP">
+              <UpArrow />
+            </Link>
+          </div>
 
         <div className="absolute col-5" style={{backgroundColor:'white', height:'100%'}}>
           <div className="row" style={{height:'100%'}}>
@@ -57,21 +64,15 @@ class About extends Page<AboutProps> {
           </div>
         </div>
 
-        <div className="container full">
+        <div className="full">
           <div className="row" style={{marginTop:'10%'}}>
             <div className="col-5 offset-6">
               <img src={majo} style={{width:'100%'}}/>
             </div>
             <div className="col" />
           </div>
-          <div className="row justify-content-center">
-            <div className="col-1">
-              <Link page="menu" transition="UP">
-                <UpArrow />
-              </Link>
-            </div>
-          </div>
         </div>
+
       </animated.div>
     );
   }

@@ -27,7 +27,7 @@ class Menu extends Page<MenuProps> {
     return (
       <animated.div 
         className="full blue absolute menu" style={this.props.style}>
-        <div className="container">
+        <div className="containr">
           <div className="row justify-content-center">
             <div className="col-1">
               <Link page="about" transition="DOWN">

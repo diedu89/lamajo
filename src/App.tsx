@@ -30,6 +30,10 @@ import Welcome from './pages/welcome';
 import Witch1 from './pages/witch1';
 import Witch2 from './pages/witch2';
 
+import Loader from './components/loader';
+
+import car from './css/images/loading.gif';
+
 const pages = {
   'about': (style:any) => <About style={style} />,
   'contact': (style:any) => <Contact style={style} />,
@@ -59,30 +63,34 @@ interface AppProps{
 }
 
 interface AppState{
-  scale:number
+  scale:number,
 }
 
-const loadingIndicator = (<div>Loading...</div>);
-
-
 class App extends React.PureComponent<AppProps, AppState>{
-  
+
   public render() {
     const {from, enter, leave, page} = this.props;
+    const renderLoader = (progress:any)=><Loader progress={progress}/>; 
     return (
       <div id="app" className="full">
         <Preload
-          loadingIndicator={loadingIndicator}
-          images={assets}>
-          <div className="very-specific-design">
-            <Transition
-              config={config.slow}
-              from={from}
-              enter={enter}
-              leave={leave}>
-              {pages[page]}
-            </Transition>
-          </div>
+          className="full"
+          loaderIndicator={<div>cargando...</div>}
+          images={[car]}>
+          <Preload
+            loadingIndicator={renderLoader}
+            images={assets}
+            >
+            <div className="very-specific-design">
+              <Transition
+                config={config.slow}
+                from={from}
+                enter={enter}
+                leave={leave}>
+                {pages[page]}
+              </Transition>
+            </div>
+          </Preload>
         </Preload>
       </div>
     )

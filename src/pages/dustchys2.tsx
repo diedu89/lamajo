@@ -10,6 +10,8 @@ import title from '../css/images/process-white.png';
 
 import LeftArrow from '../components/left-arrow';
 import Link from '../components/link'
+import SocialNetworkLinks from '../components/social-networks-links';
+import Tools from '../components/tools';
 
 interface DustchysProps extends PageProps{
   style: any
@@ -58,6 +60,10 @@ class Dustchys extends Page<DustchysProps> {
                     humanización, pruebas de color y de <br />
                     composición tipografía.
                   </div>
+                  <Tools className="col-4 offset-8 padding0 row" 
+                        style={{marginTop:'2%'}} 
+                        tools={['Illustrator']}/>
+                  <SocialNetworkLinks className="col-3 offset-9 padding0 row"/>
                 </div>
               </div>
             </div>

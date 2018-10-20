@@ -23,9 +23,7 @@ class Onu extends Page<OnuProps> {
     return (
       <animated.div 
         className="center-content-spaced full blue absolute" style={this.props.style}>
-        <div className="absolute col-4" style={{right:0, bottom:'5%', padding:0}}>
-          <ColorBar />
-        </div>
+        <ColorBar />
         <div className="containe" style={{height:'100%'}}>
           <div className="row" style={{height:'100%'}}>
             <div className="col-6 offset-1 posterContainer">
