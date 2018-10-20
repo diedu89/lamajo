@@ -11,9 +11,10 @@ import trazo4 from '../css/images/astronejo/trazo4.png';
 import btnMenu from '../css/images/btn-menu-white.svg';
 import process from '../css/images/process-white.png';
 
-import ColorBar from '../components/color-bar';
 import LeftArrow from '../components/left-arrow';
 import Link from '../components/link'
+import SocialNetworkLinks from '../components/social-networks-links';
+import Tools from '../components/tools';
 
 interface RabbitProps extends PageProps{
   style: any
@@ -24,9 +25,6 @@ class Rabbit2 extends Page<RabbitProps> {
     return (
       <animated.div 
         className="center-content-spaced full absolute rabbit2" style={this.props.style}>
-        <div className="absolute col-4" style={{right:0, bottom:'5%', padding:0}}>
-          <ColorBar />
-        </div>
         <div className="containe" style={{height:'100%'}}>
           <div className="row" style={{height:'100%'}}>
             <div className="col align-self-center" style={{padding:0}}>
@@ -37,7 +35,7 @@ class Rabbit2 extends Page<RabbitProps> {
             <div className="col-6 align-self-center" style={{padding:'0 3%'}}>
               <img src={frame} style={{width:'100%', boxShadow:'1em 1em 2.5em 0.1em'}}/>
             </div>
-            <div className="col-4 padding0" style={{marginBottom:'5%', marginTop:'5%'}}>
+            <div className="col-4 padding0" style={{marginBottom:'0%', marginTop:'5%'}}>
               <div className="row full">
                 <div className="col align-self-start">
                   <div className="row">
@@ -74,6 +72,10 @@ class Rabbit2 extends Page<RabbitProps> {
                         capa por capa, en las cuales, se experimentó a 
                         través de luces, sombras y texturas.
                       </div>
+                      <Tools className="col-8 offset-4 padding0 row" 
+                        style={{marginTop:'2%'}} 
+                        tools={['Paint Tool Sai','Photoshop']}/>
+                      <SocialNetworkLinks className="col-3 offset-9 padding0 row" instagram="BclbnvQH60S" />
                     </div>
                   </div>
                 </div>
