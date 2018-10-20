@@ -14,6 +14,7 @@ import rabbitVideo from '../css/videos/rabbit.mp4';
 
 import ColorBar from '../components/color-bar';
 import Link from '../components/link'
+import SideFade from '../components/side-fade';
 
 interface RabbitProps extends PageProps{
   style: any
@@ -43,12 +44,16 @@ class Rabbit extends Page<RabbitProps> {
                 </div>
                 <div className="w-100" />
                 <div className="col align-self-end padding0">
-                  <img src={title} style={{width:'100%'}} />
-                  <div className="AllerRegular text-right" style={{fontSize:'0.74em', color:'white',marginTop:'6%'}}>
-                    Astronejo nace como un personaje basado en 
-                    recuerdos de infancia, donde la primer mascota 
-                    de La Majo, se convierte en explorador espacial.
-                  </div>
+                  <SideFade>
+                    <img src={title} style={{width:'100%'}} />
+                  </SideFade>
+                  <SideFade delay={300}>
+                    <div className="AllerRegular text-right" style={{fontSize:'0.74em', color:'white',marginTop:'6%'}}>
+                      Astronejo nace como un personaje basado en 
+                      recuerdos de infancia, donde la primer mascota 
+                      de La Majo, se convierte en explorador espacial.
+                    </div>
+                  </SideFade>
                 </div>
               </div>
             </div>

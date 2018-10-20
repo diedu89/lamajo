@@ -16,6 +16,7 @@ import process from '../css/images/process-white.png'
 import LeftArrow from '../components/left-arrow';
 import Link from '../components/link'
 import PopUpSurface from '../components/popup-surface';
+import SideFade from '../components/side-fade';
 import SocialNetworkLinks from '../components/social-networks-links';
 import Tools from '../components/tools';
 
@@ -30,8 +31,12 @@ class Cucu extends Page<CucuProps> {
         className="center-content-spaced full green absolute" style={this.props.style}>
         <div className="absolute row full">
           <div className="col-2" style={{padding:0}}>
-            <img src={featherTopLeft} style={{width:'100%'}}/>
-            <img src={featherBottomLeft} style={{width:'100%', position:'absolute', bottom:0, left:0}}/>
+            <SideFade axis="Y" direction={-1} >
+              <img src={featherTopLeft} style={{width:'100%'}}/>
+            </SideFade>
+            <SideFade direction={-1} delay={200} style={{position:'absolute', bottom:0, left:0}}>
+              <img src={featherBottomLeft} style={{width:'100%'}}/>
+            </SideFade>
           </div>
           <div className="col-3 col align-self-center" style={{padding:'0 2%'}}>
             <PopUpSurface image={screen2} delay={400}/>
@@ -65,16 +70,20 @@ class Cucu extends Page<CucuProps> {
                 </div>
                 <div className="w-100" />
                 <div className="col align-self-end padding0 text-right">
-                  <img src={process} style={{width:'66%'}} />
-                  <div className="AllerRegular text-right" style={{fontSize:'0.75em', color:'white',marginTop:'6%'}}>
-                  A través de la utilización de ilustraciones, el 
-                  juego busca que el usuario interactúe y 
-                  aprenda de forma rápida, sencilla y divertida.
-                  </div>
-                  <Tools className="col-8 offset-4 padding0 row" 
-                        style={{marginTop:'2%'}} 
-                        tools={['Paint Tool Sai','Photoshop']}/>
-                  <SocialNetworkLinks className="col-3 offset-9 padding0 row" instagram="Bkys1gjBKi3"/>
+                  <SideFade delay={1300}>
+                    <img src={process} style={{width:'66%'}} />
+                  </SideFade>
+                  <SideFade delay={1700}>
+                    <div className="AllerRegular text-right" style={{fontSize:'0.75em', color:'white',marginTop:'6%'}}>
+                    A través de la utilización de ilustraciones, el 
+                    juego busca que el usuario interactúe y 
+                    aprenda de forma rápida, sencilla y divertida.
+                    </div>
+                    <Tools className="col-8 offset-4 padding0 row" 
+                          style={{marginTop:'2%'}} 
+                          tools={['Paint Tool Sai','Photoshop']}/>
+                    <SocialNetworkLinks className="col-3 offset-9 padding0 row" instagram="Bkys1gjBKi3"/>
+                  </SideFade>
                 </div>
               </div>
             </div>

@@ -13,6 +13,7 @@ import cv from '../lamajo_cv.pdf';
 import { faBehance, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope, faFileInvoice } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import SideFade from 'src/components/side-fade';
 
 
 interface ContactProps extends PageProps{
@@ -86,7 +87,9 @@ class Contact extends Page<ContactProps> {
               </Trail>
             </div>
             <div className="col-5 offset-1">
-              <img src={majo} style={{width:'100%'}}/>
+              <SideFade>
+                <img src={majo} style={{width:'100%'}}/>
+              </SideFade>
             </div>
           </div>
         </div>

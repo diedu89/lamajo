@@ -10,8 +10,10 @@ import trazo2 from '../css/images/pablo/trazo-2.png';
 import trazo3 from '../css/images/pablo/trazo-3.png';
 import title from '../css/images/process-blue.png';
 
+import GrowFade from '../components/grow-fade';
 import LeftArrow from '../components/left-arrow';
 import Link from '../components/link';
+import SideFade from '../components/side-fade';
 import SocialNetworkLinks from '../components/social-networks-links';
 import Tools from '../components/tools';
 
@@ -23,11 +25,15 @@ interface PabloProps extends PageProps{
 
 class Pablo extends Page<PabloProps> {
   public render() {
+    let delay=0;
+    const step=400;
     return (
       <animated.div 
         className="center-content-spaced full tomato absolute pablo" style={this.props.style}>
         <div className="absolute offset-6 padding0 col-9 book-bg-2">
-          <img src={pablo}/>
+          <SideFade direction={1}>
+            <img src={pablo}/>
+          </SideFade>
         </div>
         <div className="absolute col-7" style={{left:0, bottom:0, padding:0}}>
           <img src={terrain} style={{width: '105%'}}/>
@@ -42,15 +48,21 @@ class Pablo extends Page<PabloProps> {
             <div className="col-7">
               <div className="row trazo12-container">
                 <div className="col-6" style={{paddingLeft: '14%', marginLeft:'-10%'}}>
-                  <img src={trazo1} style={{width:'100%'}}/>
+                  <SideFade delay={delay+=step} direction={-1}>
+                    <img src={trazo1} style={{width:'100%'}}/>
+                  </SideFade>
                 </div>
                 <div className="col-6" style={{paddingRight: '14%'}}>
-                  <img src={trazo2} style={{width:'100%'}}/>
+                  <SideFade delay={delay+=step}>
+                    <img src={trazo2} style={{width:'100%'}}/>
+                  </SideFade>
                 </div>
               </div>
               <div className="row">
                 <div className="col-6 offset-2" style={{padding:'10% 0 0 0'}}>
-                  <img src={trazo3} style={{width:'100%'}}/>
+                  <GrowFade delay={delay+=step}>
+                    <img src={trazo3} style={{width:'100%'}}/>
+                  </GrowFade>
                 </div>
               </div>
             </div>

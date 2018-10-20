@@ -10,6 +10,7 @@ import title from '../css/images/witch/title.png';
 
 import ColorBar from '../components/color-bar';
 import Link from '../components/link'
+import SideFade from '../components/side-fade';
 
 interface WitchProps extends PageProps{
   style: any
@@ -36,12 +37,16 @@ class Witch1 extends Page<WitchProps> {
                 </div>
                 <div className="w-100" />
                 <div className="col align-self-end">
-                  <img src={title} style={{width:'100%'}} />
-                  <div className="AllerRegular text-right" style={{fontSize:'0.74em', color:'white',marginTop:'6%'}}>
-                    Una de las partes fundamentales al 
-                    momento de crear un personaje, es 
-                    la realización de su entorno.
-                  </div>
+                  <SideFade delay={300}>
+                    <img src={title} style={{width:'100%'}} />
+                  </SideFade>
+                  <SideFade delay={600}>
+                    <div className="AllerRegular text-right" style={{fontSize:'0.74em', color:'white',marginTop:'6%'}}>
+                      Una de las partes fundamentales al 
+                      momento de crear un personaje, es 
+                      la realización de su entorno.
+                    </div>
+                  </SideFade>
                 </div>
               </div>
             </div>

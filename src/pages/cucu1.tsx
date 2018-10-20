@@ -13,7 +13,9 @@ import featherTopLeft from '../css/images/cucu/feather-top-left.png';
 import title from '../css/images/cucu/title.png';
 
 import ColorBar from '../components/color-bar';
+// import GrowFade from '../components/grow-fade';
 import Link from '../components/link'
+import SideFade from '../components/side-fade';
 
 interface CucuProps extends PageProps{
   style: any
@@ -21,23 +23,33 @@ interface CucuProps extends PageProps{
 
 class Cucu extends Page<CucuProps> {
   public render() {
+    let delay=0;
+    const step=200;
     return (
       <animated.div 
         className="center-content-spaced full green absolute" style={this.props.style}>
         <ColorBar />
         <div className="absolute row full">
           <div className="col-2" style={{padding:0}}>
-            <img src={featherTopLeft} style={{width:'100%'}}/>
-            <img src={featherBottomLeft} style={{width:'100%', position:'absolute', bottom:0, left:0}}/>
+            <SideFade axis="Y" direction={-1} >
+              <img src={featherTopLeft} style={{width:'100%'}}/>
+            </SideFade>
+            <SideFade direction={-1} delay={delay+=step} style={{position:'absolute', bottom:0, left:0}}>
+              <img src={featherBottomLeft} style={{width:'100%'}}/>
+            </SideFade>
           </div>
           <div className="col-3 offset-3" style={{display:'flex'}}>
-            <img src={featherBottom} style={{width:'100%', alignSelf:'flex-end'}}/>
+            <SideFade axis="Y" delay={delay+=step} style={{alignSelf:'flex-end'}}>
+              <img src={featherBottom} style={{width:'100%'}}/>
+            </SideFade>
           </div>
         </div>
         <div className="containe" style={{height:'100%'}}>
           <div className="row" style={{height:'100%'}}>
             <div className="col-7 offset-1" style={{marginTop: '6%', padding:'4%'}}>
-              <img src={device} style={{width:"100%"}}/>
+              <SideFade direction={-1} delay={delay+=step}>
+                <img src={device} style={{width:"100%"}}/>
+              </SideFade>
             </div>
             <div className="col-3" style={{marginBottom:'10%', marginTop:'10%'}}>
               <div className="row full">
@@ -51,12 +63,13 @@ class Cucu extends Page<CucuProps> {
                   </div>
                 </div>
                 <div className="w-100" />
-                <div className="col align-self-end">
+                <div className="col align-self-end padding0">
                   <img src={title} style={{width:'100%'}} />
                   <div className="AllerRegular text-right" style={{fontSize:'0.74em', color:'white',marginTop:'6%'}}>
-                    Colaboración en conjunto con <br />
-                    <b>ONU MUJERES El Salvador</b>, para la <br />
-                    campaña “Pinta el mundo de naranja”.
+                    Tiene el objetivo de ser una guia para los
+                    niños y niñas en sus primeros pasos a la 
+                    experimentación y conocimiento de 
+                    sonidos, números, colores y formas
                   </div>
                 </div>
               </div>

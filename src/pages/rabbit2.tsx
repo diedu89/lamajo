@@ -11,8 +11,10 @@ import trazo4 from '../css/images/astronejo/trazo4.png';
 import btnMenu from '../css/images/btn-menu-white.svg';
 import process from '../css/images/process-white.png';
 
+import GrowFade from '../components/grow-fade';
 import LeftArrow from '../components/left-arrow';
 import Link from '../components/link'
+import SideFade from '../components/side-fade';
 import SocialNetworkLinks from '../components/social-networks-links';
 import Tools from '../components/tools';
 
@@ -22,6 +24,8 @@ interface RabbitProps extends PageProps{
 
 class Rabbit2 extends Page<RabbitProps> {
   public render() {
+    let delay=0;
+    const step=200;
     return (
       <animated.div 
         className="center-content-spaced full absolute rabbit2" style={this.props.style}>
@@ -33,7 +37,9 @@ class Rabbit2 extends Page<RabbitProps> {
               </Link>
             </div>
             <div className="col-6 align-self-center" style={{padding:'0 3%'}}>
-              <img src={frame} style={{width:'100%', boxShadow:'1em 1em 2.5em 0.1em'}}/>
+              <GrowFade axis="">
+                <img src={frame} style={{width:'100%', boxShadow:'1em 1em 2.5em 0.1em'}}/>
+              </GrowFade>
             </div>
             <div className="col-4 padding0" style={{marginBottom:'0%', marginTop:'5%'}}>
               <div className="row full">
@@ -50,32 +56,44 @@ class Rabbit2 extends Page<RabbitProps> {
                 <div className="col padding0">
                   <div className="row" style={{margin:0}}>
                     <div className="col padding0" style={{margin:'2%'}}>
-                      <img src={trazo1} className="trazo" />
+                      <SideFade delay={delay+=step}>
+                        <img src={trazo1} className="trazo" />
+                      </SideFade>
                     </div>
                     <div className="col padding0" style={{margin:'2%'}}>
-                      <img src={trazo2} className="trazo" />
+                      <SideFade delay={delay+=step}>
+                        <img src={trazo2} className="trazo" />
+                      </SideFade>
                     </div>
                   </div>
                   <div className="row" style={{margin:0}}>
                     <div className="col padding0" style={{margin:'2%'}}>
-                      <img src={trazo3} className="trazo" />
+                      <SideFade delay={delay+=step}>
+                        <img src={trazo3} className="trazo" />
+                      </SideFade>
                     </div>
                     <div className="col padding0" style={{margin:'2%'}}>
-                      <img src={trazo4} className="trazo" />
+                      <SideFade delay={delay+=step}>
+                        <img src={trazo4} className="trazo" />
+                      </SideFade>
                     </div>
                   </div>
                   <div className="row" style={{marginTop:'20%'}}>
                     <div className="col-9 offset-3 padding0" style={{textAlign:'right'}}>
-                      <img src={process} style={{width:'66%'}} />
-                      <div className="AllerRegular text-right" style={{fontSize:'0.74em',marginTop:'6%', color:'white'}}>
-                        Cuenta con capas de scketch y aplicación de color 
-                        capa por capa, en las cuales, se experimentó a 
-                        través de luces, sombras y texturas.
-                      </div>
-                      <Tools className="col-8 offset-4 padding0 row" 
-                        style={{marginTop:'2%'}} 
-                        tools={['Paint Tool Sai','Photoshop']}/>
-                      <SocialNetworkLinks className="col-3 offset-9 padding0 row" instagram="BbA_rE5H_oX" behance="64420673/Astronejo-animation" />
+                      <SideFade delay={delay+=step}>
+                        <img src={process} style={{width:'66%'}} />
+                      </SideFade>
+                      <SideFade delay={delay+=step}>
+                        <div className="AllerRegular text-right" style={{fontSize:'0.74em',marginTop:'6%', color:'white'}}>
+                          Cuenta con capas de scketch y aplicación de color 
+                          capa por capa, en las cuales, se experimentó a 
+                          través de luces, sombras y texturas.
+                        </div>
+                        <Tools className="col-8 offset-4 padding0 row" 
+                          style={{marginTop:'2%'}} 
+                          tools={['Paint Tool Sai','Photoshop']}/>
+                        <SocialNetworkLinks className="col-3 offset-9 padding0 row" instagram="BbA_rE5H_oX" behance="64420673/Astronejo-animation" />
+                      </SideFade>
                     </div>
                   </div>
                 </div>

@@ -11,6 +11,7 @@ import title from '../css/images/pablo/title.png';
 
 import ColorBar from '../components/color-bar';
 import Link from '../components/link'
+import SideFade from '../components/side-fade';
 
 import book from '../css/images/pablo/book.png';
 
@@ -20,11 +21,15 @@ interface PabloProps extends PageProps{
 
 class Pablo extends Page<PabloProps> {
   public render() {
+    let delay=0;
+    const step=500;
     return (
       <animated.div 
         className="center-content-spaced full tomato absolute pablo" style={this.props.style}>
         <div className="absolute col-12 book-bg">
-          <img src={book}/>
+          <SideFade direction={-1}>
+            <img src={book}/>
+          </SideFade>
         </div>
         
         <ColorBar />
@@ -45,15 +50,19 @@ class Pablo extends Page<PabloProps> {
                 <div className="w-100" />
                 <div className="col align-self-end padding0">
                   <div style={{padding:'5%'}}>
-                    <img src={title} style={{width:'100%'}} />
+                    <SideFade delay={delay+=step}>
+                      <img src={title} style={{width:'100%'}} />
+                    </SideFade>
                   </div>
-                  <div className="AllerRegular text-right" style={{fontSize:'0.74em', color:'white',marginTop:'6%'}}>
-                    Propuesta de ilustración editorial, constó de la 
-                    interpretación de un cuento infantil y la creación 
-                    del personaje principal junto con su entorno
-                    <br/><br/>
-                    cliente: <b>THE BOOK PROJECT</b> 
-                  </div>
+                  <SideFade delay={delay+=step}>
+                    <div className="AllerRegular text-right" style={{fontSize:'0.74em', color:'white',marginTop:'6%'}}>
+                      Propuesta de ilustración editorial, constó de la 
+                      interpretación de un cuento infantil y la creación 
+                      del personaje principal junto con su entorno
+                      <br/><br/>
+                      cliente: <b>THE BOOK PROJECT</b> 
+                    </div>
+                  </SideFade>
                 </div>
               </div>
             </div>

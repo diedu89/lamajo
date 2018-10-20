@@ -2,27 +2,26 @@ import * as React from 'react'
 
 import { animated, config, Spring } from 'react-spring';
 
-class SideFade extends React.PureComponent<{delay?:number, direction?:number, axis?:string, style?:any}>{
+class GrowFade extends React.PureComponent<{delay?:number, axis?:string}>{
  
   constructor(props:any){
     super(props);
   }
 
   public render() {
-    const { children, delay=0, direction=1, axis='X', style} = this.props;
+    const { children, delay=0, axis='Y'} = this.props;
     return (
       <Spring
         delay={delay}
         native={true}
         config={config.slow}
-        from={{ opacity: 0, transform: `translate${axis}(${direction * 100}%)` }}
-        to={{ opacity: 1, transform: `translate${axis}(0%)` }}>
+        from={{ opacity: 0, transform: `scale${axis}(0)` }}
+        to={{ opacity: 1, transform: `scale${axis}(1)` }}>
         {({ transform, opacity }:{transform:string, opacity:number}) => (
           <animated.div
             style={{
               opacity,
               transform,
-              ...style,
             }}>
             {children}
           </animated.div>
@@ -32,4 +31,4 @@ class SideFade extends React.PureComponent<{delay?:number, direction?:number, ax
   }
 }
 
-export default SideFade
+export default GrowFade

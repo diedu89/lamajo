@@ -9,8 +9,10 @@ import trazo1 from '../css/images/kotta/trazo1.png';
 import trazo2 from '../css/images/kotta/trazo2.png';
 import process from '../css/images/process-blue.png';
 
+import GrowFade from '../components/grow-fade';
 import LeftArrow from '../components/left-arrow';
 import Link from '../components/link';
+import SideFade from '../components/side-fade';
 import SocialNetworkLinks from '../components/social-networks-links';
 import Tools from '../components/tools';
 
@@ -20,6 +22,8 @@ interface KottaProps extends PageProps{
 
 class Kotta extends Page<KottaProps> {
   public render() {
+    let delay=500;
+    const step=300;
     return (
       <animated.div 
         className="center-content-spaced full absolute kotta2" style={this.props.style}>
@@ -46,21 +50,29 @@ class Kotta extends Page<KottaProps> {
                 </div>
                 <div className="w-100" />
                 <div className="col padding0">
-                  <img src={trazo1} style={{width:'100%', borderRadius:'5%', margin:'5% 0'}} />
-                  <img src={trazo2} style={{width:'100%', borderRadius:'5%', margin:'5% 0'}} />
+                  <GrowFade delay={delay+=step}>
+                    <img src={trazo1} style={{width:'100%', borderRadius:'5%', margin:'5% 0'}} />
+                  </GrowFade>
+                  <GrowFade delay={delay+=step}>
+                    <img src={trazo2} style={{width:'100%', borderRadius:'5%', margin:'5% 0'}} />
+                  </GrowFade>
                   <div className="row" style={{marginTop:'5%'}}>
                     <div className="col-9 offset-3 padding0" style={{textAlign:'right'}}>
-                      <img src={process} style={{width:'66%'}} />
-                      <div className="AllerRegular text-right" style={{fontSize:'0.74em',marginTop:'6%'}}>
-                        Es por eso que la experimentación de texturas, 
-                        luces y elementos fueron claves (y retos) para 
-                        lograr la unficiación de personaje y fondo.
-                      </div>
-                      <Tools className="col padding0 row text-right" 
-                        style={{margin:'3% 0 0 0'}}
-                        color="#4acec4" 
-                        tools={['Paint Tool Sai','Photoshop']}/>
-                      <SocialNetworkLinks style={{color:'#4acec4'}} className="col-6 offset-6 padding0 row" instagram="Bg7ndkMnXUk" behance="64421247/S-u-n-s-e-t"/>
+                      <SideFade delay={delay+=step}>
+                        <img src={process} style={{width:'66%'}} />
+                      </SideFade>
+                      <SideFade delay={delay+=step}>
+                        <div className="AllerRegular text-right" style={{fontSize:'0.74em',marginTop:'6%'}}>
+                          Es por eso que la experimentación de texturas, 
+                          luces y elementos fueron claves (y retos) para 
+                          lograr la unficiación de personaje y fondo.
+                        </div>
+                        <Tools className="col padding0 row text-right" 
+                          style={{margin:'3% 0 0 0'}}
+                          color="#4acec4" 
+                          tools={['Paint Tool Sai','Photoshop']}/>
+                        <SocialNetworkLinks style={{color:'#4acec4'}} className="col-6 offset-6 padding0 row" instagram="Bg7ndkMnXUk" behance="64421247/S-u-n-s-e-t"/>
+                      </SideFade>
                     </div>
                   </div>
                 </div>

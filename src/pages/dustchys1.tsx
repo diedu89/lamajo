@@ -13,6 +13,7 @@ import title from '../css/images/dustchys/title.png';
 
 import ColorBar from '../components/color-bar';
 import Link from '../components/link'
+import SideFade from '../components/side-fade';
 
 interface DustchysProps extends PageProps{
   style: any
@@ -30,7 +31,9 @@ class Dustchys extends Page<DustchysProps> {
         <div className="containe" style={{height:'100%'}}>
           <div className="row" style={{height:'100%'}}>
             <div className="col-7 offset-1 align-self-end" style={{padding:0, marginBottom:'6%'}}>
-              <img src={product} style={{width:'125%'}}/>
+              <SideFade direction={-1}>
+                <img src={product} style={{width:'125%'}}/>
+              </SideFade>
             </div>
             <div className="col-3" style={{marginBottom:'10%', marginTop:'10%'}}>
               <div className="row full">
@@ -45,13 +48,17 @@ class Dustchys extends Page<DustchysProps> {
                 </div>
                 <div className="w-100" />
                 <div className="col align-self-end" style={{padding:0}}>
-                  <img src={title} style={{width:'100%'}} />
-                  <div className="AllerRegular text-right" style={{fontSize:'0.72em', color:'black',marginTop:'26%'}}>
-                  Isologo creado para <br />
-                  <b>“DUTCHY’S - THE ORIGINAL DUTCH WAFFLE”,</b><br />
-                  trayendo la costumbre en pastelería holandesa 
-                  al corazón de El Salvador.
-                  </div>
+                  <SideFade delay={300}>
+                    <img src={title} style={{width:'100%'}} />
+                  </SideFade>
+                  <SideFade delay={600}>
+                    <div className="AllerRegular text-right" style={{fontSize:'0.72em', color:'black',marginTop:'26%'}}>
+                    Isologo creado para <br />
+                    <b>“DUTCHY’S - THE ORIGINAL DUTCH WAFFLE”,</b><br />
+                    trayendo la costumbre en pastelería holandesa 
+                    al corazón de El Salvador.
+                    </div>
+                  </SideFade>
                 </div>
               </div>
             </div>

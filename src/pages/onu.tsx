@@ -13,6 +13,7 @@ import poster from '../css/images/poster.png';
 
 import ColorBar from '../components/color-bar';
 import Link from '../components/link'
+import SideFade from '../components/side-fade';
 
 interface OnuProps extends PageProps{
   style: any
@@ -20,6 +21,8 @@ interface OnuProps extends PageProps{
 
 class Onu extends Page<OnuProps> {
   public render() {
+    let delay=0;
+    const step=400;
     return (
       <animated.div 
         className="center-content-spaced full blue absolute" style={this.props.style}>
@@ -52,12 +55,16 @@ class Onu extends Page<OnuProps> {
                 </div>
                 <div className="w-100" />
                 <div className="col align-self-end">
-                  <img src={title} style={{width:'100%'}} />
-                  <div className="AllerRegular text-right" style={{fontSize:'0.74em', color:'white',marginTop:'6%'}}>
-                    Colaboración en conjunto con <br />
-                    <b>ONU MUJERES El Salvador</b>, para la <br />
-                    campaña “Pinta el mundo de naranja”.
-                  </div>
+                  <SideFade delay={delay+=step}>
+                    <img src={title} style={{width:'100%'}} />
+                  </SideFade>
+                  <SideFade delay={delay+=step}>
+                    <div className="AllerRegular text-right" style={{fontSize:'0.74em', color:'white',marginTop:'6%'}}>
+                      Colaboración en conjunto con <br />
+                      <b>ONU MUJERES El Salvador</b>, para la <br />
+                      campaña “Pinta el mundo de naranja”.
+                    </div>
+                  </SideFade>
                 </div>
               </div>
             </div>

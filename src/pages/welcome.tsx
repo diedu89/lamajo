@@ -17,7 +17,10 @@ class Welcome extends Page<WelcomeProps> {
           <div className="container" style={{alignSelf:'center'}}>
             <div className="row justify-content-center">
               <div className="col-6 big-text">
-                Cantaleta Atemporal
+                <div style={{animationName: 'hvr-pulse-shrink', animationDuration:'2s', animationIterationCount:'infinite', animationDirection:'alternate'}}>
+                  Cantaleta
+                  Atemporal
+                </div>
               </div>
             </div>
             <div className="row justify-content-center">

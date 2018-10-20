@@ -9,8 +9,10 @@ import trazo1 from '../css/images/onu/trazo1.png';
 import trazo2 from '../css/images/onu/trazo2.png';
 import title from '../css/images/process-white.png';
 
+import GrowFade from '../components/grow-fade';
 import LeftArrow from '../components/left-arrow';
 import Link from '../components/link';
+import SideFade from '../components/side-fade';
 import SocialNetworkLinks from '../components/social-networks-links';
 import Tools from '../components/tools';
 
@@ -20,6 +22,8 @@ interface Onu2Props extends PageProps{
 
 class Onu2 extends Page<Onu2Props> {
   public render() {
+    let delay=0;
+    const step=300;
     return (
       <animated.div 
         className="center-content-spaced full blue absolute onu2" style={this.props.style}>
@@ -46,27 +50,35 @@ class Onu2 extends Page<Onu2Props> {
                 </div>
                 <div className="w-100" />
                 <div className="col" style={{padding:'1%', marginTop:'10%'}}>
-                  <img src={trazo1} className="trazo" style={{width:'100%'}}/>
+                  <GrowFade delay={delay+=step}>
+                    <img src={trazo1} className="trazo" style={{width:'100%'}}/>
+                  </GrowFade>
                 </div>
                 <div className="w-100" />
                 <div className="col" style={{padding:'1%'}}>
-                  <img src={trazo2} className="trazo" style={{width:'100%'}}/>
+                  <GrowFade delay={delay+=step}>
+                    <img src={trazo2} className="trazo" style={{width:'100%'}}/>
+                  </GrowFade>
                 </div>
                 <div className="w-100" />
                 <div className="col align-self-end padding0" style={{marginTop:'5%'}}>
                   <div className="col-8 offset-4 padding0" style={{padding:0}}>
-                    <img src={title} style={{width:'100%'}} />
+                    <SideFade delay={delay+=step}>
+                      <img src={title} style={{width:'100%'}} />
+                    </SideFade>
                   </div>
-                  <div className="AllerRegular text-right" style={{fontSize:'0.73em', color:'white',marginTop:'6%'}}>
-                    La inclusividad fue el tema principal para mi <br /> 
-                    pieza, complementada con color naranja, el <br />
-                    cual era requisito de la campaña. 
-                  </div>
+                  <SideFade delay={delay+=step}>
+                    <div className="AllerRegular text-right" style={{fontSize:'0.73em', color:'white',marginTop:'6%'}}>
+                      La inclusividad fue el tema principal para mi <br /> 
+                      pieza, complementada con color naranja, el <br />
+                      cual era requisito de la campaña. 
+                    </div>
 
-                  <Tools className="col-8 offset-4 padding0 row" 
-                        style={{marginTop:'2%'}} 
-                        tools={['Paint Tool Sai','Photoshop']}/>
-                  <SocialNetworkLinks className="col-3 offset-9 padding0 row" instagram="BclbnvQH60S" />
+                    <Tools className="col-8 offset-4 padding0 row" 
+                          style={{marginTop:'2%'}} 
+                          tools={['Paint Tool Sai','Photoshop']}/>
+                    <SocialNetworkLinks className="col-3 offset-9 padding0 row" instagram="BclbnvQH60S" />
+                  </SideFade>
                 </div>
               </div>
             </div>

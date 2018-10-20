@@ -7,6 +7,7 @@ import btnMenu from '../css/images/btn-menu-white.svg';
 import book from '../css/images/meche/book1.png';
 
 import ColorBar from '../components/color-bar';
+import GrowFade from '../components/grow-fade';
 import Link from '../components/link'
 import RightArrow from '../components/right-arrow';
 
@@ -21,7 +22,9 @@ class Meche extends Page<MecheProps> {
         className="center-content-spaced full blue absolute meche" style={this.props.style}>
         <div className="containe" style={{height:'100%'}}>
           <div className="absolute full">
-            <img src={book} style={{width:'100%'}}/>
+            <GrowFade axis="X">
+              <img src={book} style={{width:'100%'}}/>
+            </GrowFade>
           </div>
           <ColorBar />
           <div className="row" style={{height:'100%'}}>

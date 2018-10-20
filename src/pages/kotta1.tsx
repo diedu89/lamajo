@@ -10,6 +10,7 @@ import title from '../css/images/kotta/title.png';
 
 import ColorBar from '../components/color-bar';
 import Link from '../components/link'
+import SideFade from '../components/side-fade';
 
 interface KottaProps extends PageProps{
   style: any
@@ -36,13 +37,17 @@ class Kotta extends Page<KottaProps> {
                 </div>
                 <div className="w-100" />
                 <div className="col align-self-end">
-                  <img src={title} style={{width:'100%'}} />
-                  <div className="AllerRegular text-right" style={{fontSize:'0.74em', color:'white',marginTop:'6%'}}>
-                    La combinación de estilos ilustrativos, 
-                    pintura digital y experimentación de 
-                    perspectiva dieron la pauta para la 
-                    creación de esta ilustración.
-                  </div>
+                  <SideFade delay={300}>
+                    <img src={title} style={{width:'100%'}} />
+                  </SideFade>
+                  <SideFade delay={600}>
+                    <div className="AllerRegular text-right" style={{fontSize:'0.74em', color:'white',marginTop:'6%'}}>
+                      La combinación de estilos ilustrativos, 
+                      pintura digital y experimentación de 
+                      perspectiva dieron la pauta para la 
+                      creación de esta ilustración.
+                    </div>
+                  </SideFade>
                 </div>
               </div>
             </div>
