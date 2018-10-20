@@ -75,7 +75,7 @@ class Rabbit2 extends Page<RabbitProps> {
                       <Tools className="col-8 offset-4 padding0 row" 
                         style={{marginTop:'2%'}} 
                         tools={['Paint Tool Sai','Photoshop']}/>
-                      <SocialNetworkLinks className="col-3 offset-9 padding0 row" instagram="BclbnvQH60S" />
+                      <SocialNetworkLinks className="col-3 offset-9 padding0 row" instagram="BbA_rE5H_oX" behance="64420673/Astronejo-animation" />
                     </div>
                   </div>
                 </div>
