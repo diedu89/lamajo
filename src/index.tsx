@@ -10,6 +10,7 @@ import './index.css';
 import registerServiceWorker from './registerServiceWorker';
 
 import 'jquery/src/jquery';
+import { initialize } from 'react-ga';
 import { Provider } from 'react-redux';
 
 import store from './store'
@@ -56,6 +57,8 @@ function doResize(event:any, ui:any) {
 }
 
 $(window).resize(doResize);
+
+initialize('UA-128079627-1')
 
 ReactDOM.render(
   <Provider store={store}>

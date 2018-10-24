@@ -1,3 +1,5 @@
+import { pageview } from 'react-ga';
+
 const transitions = {
   'MOVE_RIGHT':{
     from:{ opacity: 0, transform: 'translate3d(100%,0,0)' },
@@ -29,6 +31,7 @@ const transitions = {
 
 export default function(state = {...transitions.FADE, page:'cover'}, action){
   const {type, transition, page} = action;
+  pageview("/" + page);
   if(transitions[transition]){
     return {...state, ...transitions[transition], page}
   }
