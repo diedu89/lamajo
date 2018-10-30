@@ -6,15 +6,16 @@ interface LinkProps{
   page: string,
   transition: string,
   goto: (page:string,transition:string)=>{},
-  style?: any
+  style?: any,
+  className?: string,
 }
 
 class Link extends React.Component<LinkProps>{
   public render() {
-    const {goto, page, transition, style, children, ...rest} = this.props;
-    const onClick = ()=>goto(page, transition);
+    const {goto, page, transition, style, children, className, ...rest} = this.props;
+    const onClick = () => goto(page, transition);
     return (
-      <div style={{cursor:'pointer', ...style}} onClick={onClick} {...rest}>
+      <div style={{cursor:'pointer', ...style}} className={className} onClick={onClick} {...rest}>
         {children}
       </div>
     )
@@ -22,7 +23,9 @@ class Link extends React.Component<LinkProps>{
 }
 
 const mapDispatchToProps = (dispatch: Dispatch) => ({
-  goto: (page:string,transition:string) => dispatch({type:'LOCATION_CHANGE', transition, page})
+  goto: (page:string,transition:string) => {
+    dispatch({type:'LOCATION_CHANGE', transition, page})
+  }
 });
 
 export default connect((state, ownProps)=>({...ownProps}), mapDispatchToProps)(Link);
