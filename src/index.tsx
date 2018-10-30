@@ -9,10 +9,14 @@ import './index.css';
 
 import registerServiceWorker from './registerServiceWorker';
 
+import 'core-js/es6/'; 
+import 'core-js/es7/'; 
+import 'core-js/fn/number/is-nan'; 
 import 'jquery/src/jquery';
+import 'raf/polyfill';
+
 import { initialize } from 'react-ga';
 import { Provider } from 'react-redux';
-
 import store from './store'
 
 let $el:any;
