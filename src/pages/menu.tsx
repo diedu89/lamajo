@@ -31,7 +31,7 @@ class Menu extends Page<MenuProps> {
           <div className="row justify-content-center">
             <div className="col-1">
               <Link page="about" transition="DOWN">
-                <div className="icon arrow">
+                <div className="icon arrow hvr-pulse-grow">
                   <img src={about} />
                 </div>
               </Link>
@@ -55,7 +55,7 @@ class Menu extends Page<MenuProps> {
           <div className="row justify-content-center">
             <div className="col-1">
               <Link page="contact" transition="UP">
-                <div className="icon arrow">
+                <div className="icon arrow hvr-pulse-grow">
                   <img src={contact} />
                 </div>
               </Link>
