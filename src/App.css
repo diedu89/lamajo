@@ -157,7 +157,7 @@
 #root {
   resize: both;
   position: relative;
-  background: #666;
+  background: #ccc;
 }
 
 #app {
@@ -171,6 +171,7 @@
   overflow: hidden;
   text-align: center;
   background: white;
+  box-shadow: 0em 0em 2em 0.1em;
 }
 
 .menu .col{
