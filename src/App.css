@@ -127,9 +127,8 @@
 
 .cover{
   background-color: white;
-  background-image: url(./css/images/spot.png);
-  background-position: 58.33%;
-  background-size: 84.34%;
+  background-image: url(./css/images/coverbg.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -354,4 +353,8 @@
 
 .sociallink a:hover{
   color:white;
+}
+
+.hidden{
+  visibility: hidden;
 }

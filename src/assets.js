@@ -1,6 +1,6 @@
 import process_white from './css/images/process-white.png';
 import process_blue from './css/images/process-blue.png';
-import spot from './css/images/spot.png';
+import cover_bg from './css/images/coverbg.jpg';
 import logo_text from './css/images/logo-text.png';
 
 import astronejo from './css/images/menu/astronejo.png';
@@ -81,7 +81,7 @@ import contact_majo from './css/images/contact/majo.png'
 import contact_title from './css/images/contact/title.png'
 
 export default [
-  process_white, process_blue, spot, logo_text,
+  process_white, process_blue, cover_bg, logo_text,
   astronejo, cucu, dustchys, kotta, menche, onu1, onu2, TBP, witch, 
   onu_title, onu_poster, onu_frame, onu_trazo1, onu_trazo2, 
   pablo_book, pablo_terrain, pablo_title, pablo_trazo1, pablo_trazo2, pablo_trazo3, 
