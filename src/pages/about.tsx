@@ -49,11 +49,11 @@ class About extends Page<AboutProps> {
           </div>
         </div>
 
-          <div className="col-1 align-self-end absolute" style={{bottom:0, left:'50%', marginBottom:'1%', paddingLeft:'-50%'}}>
-            <Link page="menu" transition="UP">
-              <UpArrow />
-            </Link>
-          </div>
+        <div className="col-1 align-self-end absolute" style={{bottom:0, left:0, right:0, marginBottom:'1%', marginLeft:'auto', marginRight:'auto'}}>
+          <Link page="menu" transition="UP">
+            <UpArrow />
+          </Link>
+        </div>
 
         <div className="absolute col-5" style={{backgroundColor:'white', height:'100%'}}>
           <div className="row" style={{height:'100%'}}>

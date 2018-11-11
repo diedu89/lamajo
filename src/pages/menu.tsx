@@ -3,11 +3,11 @@ import Page, { PageProps } from './page';
 
 import { animated } from 'react-spring';
 
-import DownArrow from '../components/down-arrow';
 import Link from '../components/link';
 import MenuItem from '../components/menu-item';
-import UpArrow from '../components/up-arrow';
 
+import about from '../css/images/about.svg';
+import contact from '../css/images/contact.svg';
 import astronejo from '../css/images/menu/astronejo.png';
 import cucu from '../css/images/menu/cucu.png';
 import dustchys from '../css/images/menu/dustchys.png';
@@ -31,7 +31,9 @@ class Menu extends Page<MenuProps> {
           <div className="row justify-content-center">
             <div className="col-1">
               <Link page="about" transition="DOWN">
-                <DownArrow />
+                <div className="icon arrow">
+                  <img src={about} />
+                </div>
               </Link>
             </div>
           </div>
@@ -53,7 +55,9 @@ class Menu extends Page<MenuProps> {
           <div className="row justify-content-center">
             <div className="col-1">
               <Link page="contact" transition="UP">
-                <UpArrow />
+                <div className="icon arrow">
+                  <img src={contact} />
+                </div>
               </Link>
             </div>
           </div>
