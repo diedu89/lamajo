@@ -25,9 +25,9 @@ class Welcome extends Page<WelcomeProps> {
             </div>
             <div className="row justify-content-center">
               <div className="col-6 concept-text" style={{padding:0, marginTop:'3%'}}>
-                Surge como mi propio metodo de comunicacion a traves de reiterados procesos
+                Surge como mi propio método de comunicación a través de reiterados procesos
                 ilustrativos, donde el trazo es mi principal portavoz, adaptable a distintas 
-                situaciones que requieran soluciones graficas/editoriales.
+                situaciones que requieran soluciones gráficas/editoriales.
               </div>
             </div>
           </div>

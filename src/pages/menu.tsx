@@ -61,6 +61,11 @@ class Menu extends Page<MenuProps> {
               </Link>
             </div>
           </div>
+          <div className="absolute" style={{top:0, left:0, height:'100%', width:'5%'}}>
+            <Link page='cover' transition="FADE" style={{height:'5%', width:'100%'}}>
+              <div style={{height:'100%', width:'100%', backgroundClip:'red'}} />
+            </Link>
+          </div>
         </div>
       </animated.div>
     );
